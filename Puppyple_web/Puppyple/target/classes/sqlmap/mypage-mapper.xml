@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mypage.mapper">
+
+	<!-- 관리자용 -->
+	
+	<!-- 관리자 펫 삭제 기능 -->
+	<delete id="admin_web_petDelete">
+		delete from pet
+		where pet_id = #{pet_id}
+	</delete>
+	
+	<!-- admin_detail 내 펫 리스트 -->
+	<select id="admin_pet_petList" resultType="mypage.MypageVO">
+		select p.*, (select member_nickname from member where member_id = p.member_id) member_nickname from pet p
+		where member_id = #{member_id}
+	</select>
+	
+	<!-- 회원 탈퇴 -->
+	<delete id="admin_delete">
+		delete from member
+		where member_id = #{member_id}
+	</delete>
+	
+	<!-- admin_detail 내 회원 리스트 -->
+	<select id="admin_detail" resultType="mypage.MypageVO">
+		select nvl(member_kakao || member_naver, member_id) member_id, 
+		member_nickname, member_phone, member_email, member_joindate, 
+		nvl2(member_kakao,'Y','N') member_kakao, nvl2(member_naver,'Y', 'N') member_naver, 
+		(select count(*) from pet where member_id = #{member_id} ) pet_cnt,
+		(select count(*) from member) member_cnt,
+		(select count(*) from board where member_id = #{member_id} ) board_cnt,
+		(select count(*) from board_comment where member_id = #{member_id} ) boardcomment_cnt
+		from member
+		where member_id = #{member_id} or member_naver = #{member_naver} or member_kakao = #{member_kakao}
+	</select>
+	
+	<sql id="where_search2">
+		<!-- 닉네임에 대한 검색 처리 -->
+		<if test="search == 'member_nickname'">
+			where ${search} like '%'||#{keyword}||'%'
+		</if>
+		<!-- 아이디에 대한 검색 처리 -->
+		<if test="search == 'member_id'">
+			where ${search} like '%'||#{keyword}||'%'
+		</if>
+		<!-- 전체에 대한 검색 처리 -->
+		<if test="search == 'all'">
+			where member_nickname like '%'||#{keyword} ||'%'
+			or member_id in (select member_id from member where member_nickname like
+			'%'||#{keyword}||'%')
+		</if>
+	</sql>
+	
+	<sql id="where_search">
+		<!-- 전체에 대한 검색 처리 -->
+		<if test="search == 'all'">
+			where member_nickname like '%'||#{keyword} ||'%'
+			or member_id in (select member_id from member where member_nickname like
+			'%'||#{keyword}||'%')
+		</if>
+		<!-- 작성자 또는 닉네임에 대한 검색 처리 -->
+		<if test="search == 'member_nickname'">
+			where ${search} like '%'||#{keyword}||'%'
+		</if>
+		<!-- 작성자에 대한 검색 처리 -->
+		<if test="search == 'member_id'">
+			where ${search} like '%'||#{keyword}||'%'
+		</if>
+		<if test="keyword == ''">
+			
+		</if>
+	</sql>
+   	<!-- 회원 수 조회 -->
+	<select id="admin_totalList" resultType="integer">
+		select count(*) from member	<include refid="where_search" />
+	</select>
+
+	<!-- 페이지 처리된 글 목록 조회 -->
+ 	<select id="admin_list" resultType="mypage.MypageVO">
+		select nvl(member_kakao || member_naver, member_id) member_id, 
+  		member_nickname, member_phone, member_email, member_joindate, 
+  		(select count(*) member_cnt from member) member_cnt,
+  		(select count(*) from pet ) pet_cnt,
+		(select count(*) from board) board_cnt,
+		(select count(*) from board_comment) boardcomment_cnt,
+		(select count(*) from board where flag = 'M') board_M_cnt, 
+		(select count(*) from board where flag = 'B') board_B_cnt, 
+		(select count(*) from board where flag = 'I') board_I_cnt, 
+		(select count(*) from board where flag = 'G') board_G_cnt, 
+		(select count(*) from board where flag = 'T') board_T_cnt, 
+		(select count(*) from board where flag = 'N') board_N_cnt, 
+		(select count(*) from board where flag = 'F') board_F_cnt, 
+		(select count(*) from board where flag = 'E') board_E_cnt
+			from (select rownum no, g.* 
+				from ( select * from member <include refid="where_search2" />
+						order by member_id) g
+			order by no desc)
+		where no between #{beginList} and #{endList} 
+		order by member_admin desc, member_joindate desc
+	</select>
+  	
+  	<select id="admin_current" resultType="mypage.MypageVO">
+  		select 
+  		(select count(*) member_cnt from member) member_cnt,
+  		(select count(*) from pet ) pet_cnt,
+		(select count(*) from board) board_cnt,
+		(select count(*) from board_comment) boardcomment_cnt,
+		(select count(*) from board where flag = 'M') board_M_cnt, 
+		(select count(*) from board where flag = 'B') board_B_cnt, 
+		(select count(*) from board where flag = 'I') board_I_cnt, 
+		(select count(*) from board where flag = 'G') board_G_cnt, 
+		(select count(*) from board where flag = 'T') board_T_cnt, 
+		(select count(*) from board where flag = 'N') board_N_cnt, 
+		(select count(*) from board where flag = 'F') board_F_cnt, 
+		(select count(*) from board where flag = 'E') board_E_cnt 
+  		 from member
+  	</select>
+
+	<!-- 여기까지 관리자용 -->
+	
+	<!-- 내가 좋아요글 리스트 조회 -->
+	<select id="totalListFavorites" resultType="integer">
+		select count(*) from favorites where like_member_id = #{member_id}
+	</select>
+	
+	<!-- 페이지 처리된 글 목록 조회 -->
+	<select id="myFavoritesList" resultType="community.CommunityVO">
+		select *
+			from (select rownum no, b.*, (select member_nickname from member where member.member_id = b.member_id ) member_nickname 
+					from board b, favorites f
+					where b.id = f.pid
+					and f.like_member_id = #{member_id}
+			order by no desc)
+		where no between #{beginList} and #{endList}
+	</select>
+	
+	<!-- 내가 쓴글 리스트 조회 -->
+	<select id="totalList" resultType="integer">
+		select count(*) from board where member_id = #{member_id}
+	</select>
+	
+	<!-- 페이지 처리된 글 목록 조회 -->
+	<select id="myPostList" resultType="community.CommunityVO">
+		select *
+			from (select rownum no, b.*, ( select member_nickname from member where member.member_id = #{member_id} ) member_nickname
+				from ( select * from board where member_id = #{member_id} 
+						order by id) b
+			order by b.board_writedate desc)
+		where no between #{beginList} and #{endList}
+	</select>
+	
+	<delete id="info_delete">
+		delete from member
+		where member_id = #{member_id}
+	</delete>
+	
+	<select id="member_info" resultType="mypage.MypageVO">
+	select nvl(member_kakao || member_naver, member_id) member_id, member_nickname, member_phone, member_email
+	from member
+	where member_id = #{member_id}
+	</select> 
+		
+	<update id="web_member_modify">
+		update member
+		set member_pw = #{member_pw}, member_nickname = #{member_nickname}, member_phone = #{member_phone}, member_email = #{member_email}
+		where member_id = #{member_id}
+	</update>
+	
+</mapper>

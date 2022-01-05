@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+/* 	-webkit- : Safari, Chrome, IOS, Android */
+input:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+/* -moz- : Firefox */
+input:focus::-moz-input-placeholder {
+	color: transparent;
+}
+/* -ms- : IE, MS-Edge */
+input:focus::-ms-input-placeholder {
+	color: transparent;
+}
+
+/* 초기화 값  */
+*{margin: 0; padding: 0; box-sizing: border-box; border-collapse: collapse;}
+ol,ul{list-style: none; overflow: hidden;}
+a{outline: 0; text-decoration: none; color: #222; }
+img{border: 0;}
+body{ background-color: #fafafa; color: #444; font:12px/1.6; font-family: 'NanumSquareRound',sans-serif; }
+/*  Light(300) Regular(400), Bold(700), Extra Bold(800),  */
+
+#joinForm {
+	width: 460px;
+	margin: 0px auto;
+	margin-top: 60px;
+}
+.logo{
+	width: 180px;
+	margin: 0 auto;
+}
+.logo img{
+	width: 180px;
+	height: auto;
+	margin-left: 14px;
+}
+#idForm, #pwForm, #pwForm2, #nicknameForm, #phoneForm, #emailForm{
+	width: 100%;
+	height: 110px;
+	margin-top: 10px;
+}
+#idForm{margin-top: 50px;}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 15px;
+	font-family: 'Godo', 'Sans-serif';
+	font-weight: 400;
+}
+input{
+	border: 1px solid #d2d2d2;
+	width: 100%;
+	height: 48px;
+	padding-left: 10px;
+	padding-top: 3px;
+}
+input::placeholder{
+	color: #d6d6d6;
+	font-weight: 300;
+}
+
+input:focus {
+	outline: none;
+}
+
+/* 폰트어썸에서 가져온 <i>태그 애들 */
+.fas { color: #731aed; padding-left: 5px;}
+
+.error{ 
+	color: #731aed; 
+	font-size: 12px; 
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	margin-top: 5px;
+	display: none;
+}
+
+div p{
+	display: inline-block;
+}
+
+/* ----중간에 비밀번호 입력칸만 visible 아이콘 삽입하려고 따로 디자인함----*/
+.pw_wrap{
+	border: 1px solid #d2d2d2;
+	background-color: #fff;
+	width: 100%;
+	height: 48px;
+	
+}
+#member_pw{
+	border: none;
+	width: 91%;
+	height: 100%;
+}
+
+.eye{
+	display: inline-block;
+	width: 7%;
+	height: 100%;
+	color: #b4b4b4;
+	font-size: 18px;
+}
+
+
+/* ------------------비밀번호 칸 끝--------------------*/
+
+
+#submit{
+	width: 100%;
+	height: 60px;
+	margin-top: 30px;
+	background-color: #731aed;
+	border: none;
+	color: #fff;
+	font-size: 15px;
+}
+
+#link_login{
+	width: 100%;
+	margin-top: 20px; 
+	font-size: 13px;
+	text-align: center;
+}
+
+a {
+	color: #b22de4;
+	font-weight: 800;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#footer{
+	width: 100%;
+	margin-top: 70px; 
+	margin-bottom: 70px;
+	font-family: 'Godo', 'Sans-serif';
+	font-weight: 400;
+	font-size: 11px;
+	text-align: center;
+}
+
+.id_warning_notext,.id_warning_not, .id_warning_used, .pw_warning_notext, .pw_warning_not, .pw_warning_not2, .pw_warning_notext2, .nic_warning_notext, .nic_warning_not, .nic_warning_used, .phone_warning_notext, .phone_warning_not, .email_warning_notext, .email_warning_not{
+   display:none;
+   font-size: 13px;
+   margin-top: -5px;
+}
+

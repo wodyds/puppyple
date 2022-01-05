@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="75dp"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="82">
+
+        <RelativeLayout
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <Button
+            android:id="@+id/map_Hospital"
+            android:layout_width="130dp"
+            android:layout_height="55dp"
+            android:layout_gravity="left"
+            android:background="@drawable/button_background3"
+            android:text="동물병원"
+            android:textColor="#FFF"
+            android:textSize="15sp" />
+
+        <!--정렬 시키려고 넣은 의미없는 view임-->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/map_Beauty"
+            android:layout_width="130dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_background3"
+            android:text="애견미용실"
+            android:textColor="#FFF"
+            android:textSize="15sp" />
+
+        <!--정렬 시키려고 넣은 의미없는 view임-->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/map_cafe"
+            android:layout_width="130dp"
+            android:layout_height="55dp"
+            android:layout_gravity="right"
+            android:background="@drawable/button_background3"
+            android:text="애견카페"
+            android:textColor="#FFF"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</LinearLayout>

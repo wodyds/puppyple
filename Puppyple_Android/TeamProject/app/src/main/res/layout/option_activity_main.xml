@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/option_main"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_marginTop="75dp"
+    android:orientation="vertical"
+    android:weightSum="1000">
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/option_Mypage"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_weight="125"-->
+<!--        android:background="@drawable/border_bottom"-->
+<!--        android:gravity="left|center"-->
+<!--        android:paddingLeft="16dp"-->
+<!--        android:text="마이페이지" />-->
+
+    <!--<TextView
+            android:id="@+id/option_Alert"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingLeft="16dp"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:text="알림설정" />-->
+
+    <TextView
+        android:id="@+id/option_Notice"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border_bottom"
+        android:layout_weight="125"
+        android:gravity="left|center"
+        android:paddingLeft="16dp"
+        android:text="공지사항" />
+
+    <TextView
+        android:id="@+id/option_Faq"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border_bottom"
+        android:layout_weight="125"
+        android:gravity="left|center"
+        android:paddingLeft="16dp"
+        android:text="FAQ" />
+
+<!--    <TextView
+        android:id="@+id/option_Version"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border_bottom"
+        android:layout_weight="125"
+        android:gravity="left|center"
+        android:paddingLeft="16dp"
+        android:text="버전정보 - 1.0.0" />-->
+
+    <TextView
+        android:id="@+id/option_Service"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border_bottom"
+        android:layout_weight="125"
+        android:gravity="left|center"
+        android:paddingLeft="16dp"
+        android:text="서비스 이용 약관" />
+
+    <TextView
+        android:id="@+id/option_Personal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border_bottom"
+        android:layout_weight="125"
+        android:gravity="left|center"
+        android:paddingLeft="16dp"
+        android:text="개인정보 취급방침" />
+
+    <TextView
+        android:id="@+id/option_Location"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border_bottom"
+        android:layout_weight="125"
+        android:gravity="left|center"
+        android:paddingLeft="16dp"
+        android:text="위치기반 서비스 이용약관" />
+
+    <TextView
+        android:id="@+id/option_Login"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border_bottom"
+        android:layout_weight="125"
+        android:gravity="left|center"
+        android:paddingLeft="16dp"
+        android:text="로그인" />
+
+
+</LinearLayout>

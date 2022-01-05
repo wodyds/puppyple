@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/tab1"
+        android:enabled="true"
+        android:icon="@drawable/house"
+        android:title="홈"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/tab2"
+        android:enabled="true"
+        android:icon="@drawable/map"
+        android:title="퍼피맵"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/tab3"
+        android:enabled="true"
+        android:icon="@drawable/dog_community"
+        android:title="커뮤니티"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/tab4"
+        android:enabled="true"
+        android:icon="@drawable/youtube"
+        android:title="펫튜브"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/tab5"
+        android:enabled="true"
+        android:icon="@drawable/settings"
+        android:title="설정"
+        app:showAsAction="ifRoom"/>
+</menu>

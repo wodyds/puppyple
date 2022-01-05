@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">PUPPYPLE</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <!--카카오-->
+    <string name="kakao_name">KakaoLoginSample</string>
+    <!--  카카오 네이티브 앱 키  -->
+    <string name="kakao_app_key">93afe7eedc6049bdb661cbd138b3045a</string>
+
+
+    <!--네이버-->
+    <string name="naver_client_id">ZlnhPwUQjtZRXikty6Ci</string>
+    <string name="naver_client_secret">fLyP7S1M1p</string>
+    <string name="naver_client_name">puppyple</string>
+
+    <string-array name="community_array">
+        <item>자유게시판</item>
+        <item>정보공유</item>
+        <item>갤러리</item>
+        <item>중고거래</item>
+    </string-array>
+
+    <string-array name="comment_array">
+        <item>수정</item>
+        <item>삭제</item>
+        <item>취소</item>
+    </string-array>
+
+
+</resources>

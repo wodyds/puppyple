@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="member.mapper">
+
+	<!-- 로그인 (id, pw 일치여부 조회) -->
+	<select id="web_login" resultType="member.MemberVO">
+		select * from member
+		where member_id = #{member_id}
+		and member_pw = #{member_pw}
+	</select>
+
+	<select id="member_id_check" resultType="integer">
+		select count(*) from member
+		where member_id = #{member_id}
+	</select> 
+	<select id="member_nickname_check" resultType="integer">
+		select count(*) from member
+		where member_nickname = #{member_nickname}
+	</select> 
+	
+	<select id="web_id_find" resultType="String">
+		select member_id
+		from member
+		where member_email = #{member_email}
+		and member_kakao is null
+		and member_naver is null
+	</select>
+	
+	<select id="web_pw_find" resultType="String">
+		select member_pw
+		from member
+		where member_id = #{member_id}
+		and member_email = #{member_email}
+		and member_kakao is null
+		and member_naver is null
+	</select>
+	
+	
+	<!-- 회원가입처리 -->
+	<!-- #{member_kakao, jdbcType=VARCHAR}, #{member_naver, jdbcType=VARCHAR} -->
+	<insert id="join">
+		insert into member (member_id, member_pw, member_nickname, member_phone, member_email)
+		values (#{member_id}, #{member_pw}, #{member_nickname}, #{member_phone}, #{member_email})
+	</insert>
+
+	<!-- social_email 존재 여부 조회(소셜 로그인 이력 조회) -->
+	<select id="web_social_email" resultType="Integer">
+		select count(*) from member
+		where ${social_type} = #{social_email}
+		<!-- ${social_type} 내 들어있는 동적 데이터 (즉, naver, kakao)를 불러옴 -->
+	</select>
+	
+	<update id="web_social_update">
+		update member 
+		set member_nickname = #{member_nickname}
+		where ${social_type} = #{social_email}
+	</update>
+	
+	<insert id="web_social_insert">
+		insert into member(member_id, member_pw, member_nickname, member_phone, member_email, ${social_type} )
+		values(#{member_id}, #{member_pw}, #{member_nickname}, #{member_phone}, #{member_email}, #{member_email})
+	</insert>
+
+
+	<!-- Android -->
+
+	<!-- 회원가입처리 -->
+	<!-- #{member_kakao, jdbcType=VARCHAR}, #{member_naver, jdbcType=VARCHAR} --> 
+	<insert id="and_join">
+		insert into member (member_id, member_pw, member_nickname, member_phone, member_email)
+		values (#{member_id}, #{member_pw}, #{member_nickname}, #{member_phone}, #{member_email})
+	</insert>
+	
+	<!-- 카카오회원가입처리 -->
+	<!-- #{member_kakao, jdbcType=VARCHAR}, #{member_naver, jdbcType=VARCHAR} --> 
+	<insert id="and_join_kakao">
+		insert into member (member_id, member_pw, member_phone,member_email,member_nickname,member_kakao,member_admin  )
+		values (#{member_id}, #{member_pw},#{member_phone}, #{member_email},#{member_nickname},#{member_kakao},#{member_admin}  )
+	</insert>
+	
+	<!-- 네이버회원가입처리 -->
+	<!-- #{member_kakao, jdbcType=VARCHAR}, #{member_naver, jdbcType=VARCHAR} --> 
+	<insert id="and_join_naver">
+		insert into member (member_id, member_pw, member_phone,member_email,member_nickname,member_naver)
+		values (#{member_id}, #{member_pw},#{member_phone}, #{member_email},#{member_nickname},#{member_naver})
+	</insert>
+	
+	<!-- 회원 탈퇴 기능 -->
+	<delete id="and_delete">
+		delete from member
+		where member_id = #{member_id}
+	</delete>
+	
+	<!-- 회원정보업데이트 안드로이드 -->
+	<update id="and_update" >
+		update member
+		set member_pw = #{member_pw}, member_phone = #{member_phone}, member_email = #{member_email}, member_nickname = #{member_nickname}
+		where member_id = #{member_id} 
+	</update>
+	
+
+	<!-- 아이디 찾기 처리 -->
+	<select id="and_id_find" resultType="member.MemberVO">
+		select *
+		from member
+		where member_email = #{member_email}
+		and member_kakao is null
+		and member_naver is null
+	</select>
+	
+	<!-- 비밀번호 찾기 처리 -->
+	<select id="and_pw_find" resultType="member.MemberVO">
+		select *
+		from member
+		where member_id = #{member_id} 
+		and member_email = #{member_email}
+		and member_kakao is null
+		and member_naver is null
+	</select>
+	
+	<!-- 로그인처리 -->
+	<select id="and_login" resultType="member.MemberVO">
+		select *
+		from member
+		where member_id = #{member_id}
+		and member_pw = #{member_pw}
+	</select>
+	
+	<!-- 아이디중복확인 -->
+	<select id="and_idChk" resultType="integer">
+		select COUNT(*)
+		from member
+		where member_id = #{member_id}
+	</select>
+	
+	<!-- 닉네임중복확인 -->
+	<select id="and_nickChk" resultType="integer">
+		select COUNT(*)
+		from member
+		where member_nickname = #{member_nickname}
+	</select>
+
+</mapper>

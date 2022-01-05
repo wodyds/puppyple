@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/contain"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/toolbar_bg"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ivMemberModify_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="21dp"
+            android:background="@drawable/back"
+            android:backgroundTint="#555555" />
+
+        <TextView
+            android:id="@+id/tvMyPageMemberInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="회원정보수정"
+            android:textColor="#555555"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="35dp"
+        android:paddingTop="26dp"
+        android:paddingRight="35dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="141dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="35dp"
+            app:srcCompat="@drawable/logo_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvMemberModifyId"
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:text="아이디"
+                android:textSize="15sp" />
+
+            <!--아이디 고정 (수정불가) EditText인거 TextView로 수정함-->
+            <TextView
+                android:id="@+id/etMemberModifyId"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="3dp"
+                android:text="(아이디)"
+                android:textColor="#535353"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvMemberModifyPw"
+                android:layout_width="86dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:text="비밀번호"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/etMemberModifyPw"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/border1dp_radius_box"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="비밀번호를 입력하세요"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvMemberModifyPwChk"
+                android:layout_width="86dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:text="비밀번호 확인"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/etMemberModifyPwChk"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/border1dp_radius_box"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="비밀번호를 다시 입력하세요"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvMemberModifyPhone"
+                android:layout_width="86dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:text="전화번호"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/etMemberModifyPhone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/border1dp_radius_box"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="전화번호를 입력하세요"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvMemberModifyEmail"
+                android:layout_width="86dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:text="이메일"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/etMemberModifyEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/border1dp_radius_box"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="이메일을 입력하세요"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvMemberModifyNickname"
+                android:layout_width="86dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:text="닉네임"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/etMemberModifyNickname"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/border1dp_radius_box"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="닉네임을 입력하세요"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+
+            <Button
+                android:id="@+id/btnMemberModifyNicknameChk"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background2"
+                android:gravity="center"
+                android:text="중복확인"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnMemberModifySave"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_background2"
+                android:text="수정완료"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/btnMemberModifyCancel"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="32dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background2"
+                android:text="취소"
+                android:textColor="#FFFFFF"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

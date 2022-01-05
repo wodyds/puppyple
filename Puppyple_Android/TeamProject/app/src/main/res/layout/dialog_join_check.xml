@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="130dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/border_radius20dp_box">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:textSize="14sp"
+        android:paddingLeft="40dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="20dp"
+        android:text="가입하겠습니까?" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp">
+
+        <TextView
+            android:id="@+id/dialog_join_check_no"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="취소"
+            android:layout_marginLeft="180dp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical|center_horizontal"
+            />
+        <TextView
+            android:id="@+id/dialog_join_check_yes"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="확인"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical|center_horizontal"/>
+    </LinearLayout>
+
+</LinearLayout>
+

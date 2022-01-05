@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/contain"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/toolbar_bg"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/kakao_add_info_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="21dp"
+                android:background="@drawable/back"
+                android:backgroundTint="#555555" />
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="추가정보입력"
+                android:textColor="#555555"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+
+            <EditText
+                android:id="@+id/et_kakao_add_phone"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/purple_700"
+                android:ems="10"
+                android:hint="전화번호를 입력해주세요."
+                android:paddingLeft="20dp"
+                android:textSize="17sp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="70dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <EditText
+                    android:id="@+id/et_kakao_add_nickname"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="75"
+                    android:backgroundTint="@color/purple_700"
+                    android:ems="10"
+                    android:hint="닉네임을 입력해주세요."
+                    android:paddingLeft="20dp"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"/>
+
+                <Button
+                    android:id="@+id/btn_nick_chk"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:text="중복확인" />
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/kakao_add_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="확인"
+                android:textSize="17sp"
+                android:textColor="#FFF"
+                android:background="@drawable/button_background2"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

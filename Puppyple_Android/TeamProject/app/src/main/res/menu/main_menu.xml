@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_my_page"
+            android:icon="@android:drawable/ic_menu_camera"
+            android:title="마이페이지" />
+        <item
+            android:id="@+id/nav_notice"
+            android:icon="@android:drawable/ic_menu_gallery"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:title="공지사항" />
+        <item
+            android:id="@+id/nav_customer_center"
+            android:icon="@android:drawable/ic_menu_slideshow"
+            android:title="고객센터" />
+        <item
+            android:id="@+id/nav_faq"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="FAQ" />
+        <item
+            android:id="@+id/nav_service"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="서비스 이용약관" />
+        <item
+            android:id="@+id/nav_my_info"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="개인정보취급방침" />
+        <item
+            android:id="@+id/nav_location_service"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="위치기반 서비스 이용약관" />
+
+
+    </group>
+
+   <item
+        android:id="@+id/communi"
+        android:title="Communicate"
+        android:visible="false">
+
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@android:drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@android:drawable/ic_menu_send"
+                android:title="Send" />
+
+        </menu>
+
+
+    </item>
+</menu>

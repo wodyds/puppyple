@@ -1,0 +1,612 @@
+package com.example.petInfo;
+
+import static com.example.Common.CommonMethod.dtos;
+import static com.example.Common.CommonMethod.loginDTO;
+
+import android.Manifest;
+import android.content.ContentResolver;
+import android.content.ContentValues;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
+import android.media.ExifInterface;
+import android.net.Uri;
+import android.os.Build;
+import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
+import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.core.content.FileProvider;
+
+import com.bumptech.glide.Glide;
+import com.example.ATask.PetInfoModify;
+import com.example.ATask.PetInfoModify_nofile;
+import com.example.ATask.PetListSelect;
+import com.example.DTO.PetDTO;
+import com.example.PUPPYPLE.R;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Objects;
+import java.util.concurrent.ExecutionException;
+
+public class PetListViewInfoModify_Activity extends AppCompatActivity {
+
+    //Context context;
+    //PetDTO dto;
+
+    PetListViewAdapter adapter;
+
+    ImageView ivPetInfoModify_back, ivPetInfoModify;
+
+    TextView tvPetInfoModify, tvPetInfoModifyName, tvPetInfoModifyAge,tvPetInfoModifyBreed
+            , tvPetInfoModifyWeight, tvPetInfoModifyGender, tvPetInfoModifyNeutering;
+
+    EditText etPetInfoModifyName, etPetInfoModifyAge, etPetInfoModifyBreed, etPetInfoModifyWeight;
+
+    RadioGroup raPetInfoModifyGender;
+    RadioButton raPetInfoModifyFemale, raPetInfoModifyMale;
+
+    CheckBox chBoxPetInfoModifyNuetering;
+
+    Button btnPetInfoModifySave, btnPetInfoModifyCancel;
+
+    //20211125 PetInfoAdd_Activity에서 있던 것들을 아래 복사///////////////////////
+    File imgFile = null;
+    String imgFilePath = "", state = "", old_filename;
+    String pet_gender = "";
+    String pet_nuetering = "";
+
+    // 갤러리에서 파일 선택 시 첫 화면이 아닌 갤러리탭 안에서 파일선택만 가능
+    // 첫화면에서 파일 선택 시 충돌 == 나중에 디버깅
+    static final int CAPTURE_REQUEST_CODE = 1;
+    static final int GALLERY_REQUEST_CODE = 2;
+    Button reg_btn;
+    Button btn_back;
+    Spinner board_spinner;
+    String[] galleryOrCamera = {"갤러리","카메라"};
+    //////////////////////////////////////////////////////////////////////////
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.pet_listview_info_modify);
+
+        //20211125 getextra로 인텐트로 dto 정보를 보냈는데, 이걸 여기서
+        //아래 두줄과 같이 해줘야 정보를 읽는다.
+        PetDTO dto = (PetDTO) getIntent().getSerializableExtra("dto");
+        Intent intent = getIntent();
+        old_filename = dto.getPet_filename();
+        checkDangerousPermissions();
+
+        /*ImageView*/
+        ivPetInfoModify = findViewById(R.id.ivPetInfoModify);
+        ivPetInfoModify_back = findViewById(R.id.ivPetInfoModify_back);
+
+        //일단 사진을 받아와서 여기에서 Glide로 붙여줘야할듯
+        //xml에 데이터 연결하기
+        Glide.with(PetListViewInfoModify_Activity.this)
+                .load(dto.getPet_filename())
+                .circleCrop()
+                .placeholder(R.drawable.user_basic)
+                .into(ivPetInfoModify);
+
+        /*EditText*/
+        etPetInfoModifyName = findViewById(R.id.etPetInfoModifyName);
+        etPetInfoModifyAge = findViewById(R.id.etPetInfoModifyAge);
+        etPetInfoModifyBreed = findViewById(R.id.etPetInfoModifyBreed);
+        etPetInfoModifyWeight = findViewById(R.id.etPetInfoModifyWeight);
+
+        /*CheckBox & RadioButton & Button*/
+        raPetInfoModifyGender = findViewById(R.id.raPetInfoModifyGender);
+        raPetInfoModifyFemale = findViewById(R.id.raPetInfoModifyFemale);
+        raPetInfoModifyMale = findViewById(R.id.raPetInfoModifyMale);
+        chBoxPetInfoModifyNuetering = findViewById(R.id.chBoxPetInfoModifyNuetering);
+        btnPetInfoModifySave = findViewById(R.id.btnPetInfoModifySave);
+        btnPetInfoModifyCancel = findViewById(R.id.btnPetInfoModifyCancel);
+
+        etPetInfoModifyName.setText(dto.getPet_name());
+        etPetInfoModifyAge.setText(dto.getPet_age());
+        etPetInfoModifyBreed.setText(dto.getPet_breed());
+        etPetInfoModifyWeight.setText(dto.getPet_weight());
+
+        if (dto.getPet_gender().equals("F")) {
+            raPetInfoModifyGender.check(R.id.raPetInfoModifyFemale);
+        } else if (dto.getPet_gender().equals("M")) {
+            raPetInfoModifyGender.check(R.id.raPetInfoModifyMale);
+        }
+
+        if (dto.getPet_nuetering().equals("Y")) {
+            chBoxPetInfoModifyNuetering.setChecked(true);
+        } else if (dto.getPet_nuetering().equals("N")) {
+            chBoxPetInfoModifyNuetering.setChecked(false);
+        }
+
+
+        //뒤로가기
+
+        ivPetInfoModify_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+                overridePendingTransition(0, 0); //애니메이션 없애기
+            }
+        });//inPetInfoModify_back
+
+        //취소버튼 클릭
+        btnPetInfoModifyCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });//btnPetInfoModifyCancel
+
+        //저장 및 추가 버튼 클릭시
+        btnPetInfoModifySave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                //20211125
+                //0.pet아이디로 같이 넘겨준다. 회원의 id도 같이 물려준다.
+                String pet_id = String.valueOf(dto.getPet_id());
+                String member_id = loginDTO.getMember_id();
+
+                //1.펫추가에 필요한 정보를 가져온다.
+                String pet_name = etPetInfoModifyName.getText().toString();
+                String pet_age = etPetInfoModifyAge.getText().toString();
+                String pet_breed = etPetInfoModifyBreed.getText().toString();
+                String pet_weight = etPetInfoModifyWeight.getText().toString();
+                String pet_filepath = imgFilePath;
+                if(pet_filepath.equals(old_filename)||pet_filepath.equals("")){
+                    pet_filepath = null;
+                }
+                //1-1성별라디오버튼 처리 기능 구현
+                String pet_gender = "";
+                int radioButtonId = raPetInfoModifyGender.getCheckedRadioButtonId();
+                RadioButton radioButton = findViewById(radioButtonId);
+                if (radioButton.getText().toString().equals("암컷")) {
+                    pet_gender = "F";
+                }else if (radioButton.getText().toString().equals("수컷")) {
+                    pet_gender = "M";
+                }
+
+                //1-2중성화여부 체크박스 처리 기능 구현
+                if(chBoxPetInfoModifyNuetering.isChecked()) {
+                    pet_nuetering = "Y";
+                }else {
+                    pet_nuetering = "N";
+                }
+
+                //2. 이정보를 비동기 Task로 넘겨 서버에게 전달한다.
+                if(pet_filepath != null){
+                    PetInfoModify petInfoModify = new
+                            PetInfoModify(pet_id, member_id, pet_name, pet_age, pet_breed, pet_weight, pet_gender, pet_nuetering, pet_filepath);
+
+                    try {
+                        state = petInfoModify.execute().get().trim();
+                    } catch (ExecutionException e) {
+                        e.printStackTrace();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
+                    if(state.equals("1")) {
+                        Toast.makeText(PetListViewInfoModify_Activity.this,
+                                "반려견 정보가 정상적으로 수정되었습니다.", Toast.LENGTH_SHORT).show();
+
+                        ArrayList<PetDTO> dtos1 = new ArrayList<>();
+                        PetListSelect petListSelect = new PetListSelect(member_id,dtos1);
+                        try {
+                            petListSelect.execute().get();
+                        } catch (ExecutionException e) {
+                            e.printStackTrace();
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+
+                        dtos.get(0).setPet_id(Integer.parseInt(pet_id));
+                        dtos.get(0).setMember_id(member_id);
+                        dtos.get(0).setPet_name(pet_name);
+                        dtos.get(0).setPet_age(pet_age);
+                        dtos.get(0).setPet_breed(pet_breed);
+                        dtos.get(0).setPet_weight(pet_weight);
+                        dtos.get(0).setPet_gender(pet_gender);
+                        dtos.get(0).setPet_nuetering(pet_nuetering);
+                        dtos.get(0).setPet_filename(dtos1.get(0).getPet_filename());
+
+                        finish();
+
+                        //20211125 어댑터는 activity가 없어서 아래와 같이 context와, flag를 해주고,
+                        //그 Listview에 갱신이 되도록 해준다.
+                        Intent intent = new Intent(PetListViewInfoModify_Activity.this, PetListView_Activity.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK |
+                                Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                        startActivity(intent);
+
+
+                    }else {
+                        Toast.makeText(PetListViewInfoModify_Activity.this,
+                                "반려견 정보 수정에 실패했습니다. 다시 시도해주세요.", Toast.LENGTH_SHORT).show();
+                    }
+                }else{
+                    PetInfoModify_nofile petInfoModify = new
+                            PetInfoModify_nofile(pet_id, member_id, pet_name, pet_age, pet_breed, pet_weight, pet_gender, pet_nuetering);
+
+                    try {
+                        state = petInfoModify.execute().get().trim();
+                    } catch (ExecutionException e) {
+                        e.printStackTrace();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
+                    if(state.equals("1")) {
+                        Toast.makeText(PetListViewInfoModify_Activity.this,
+                                "반려견 정보가 정상적으로 수정되었습니다.", Toast.LENGTH_SHORT).show();
+                        ArrayList<PetDTO> dtos1 = new ArrayList<>();
+                        PetListSelect petListSelect = new PetListSelect(member_id,dtos1);
+                        try {
+                            petListSelect.execute().get();
+                        } catch (ExecutionException e) {
+                            e.printStackTrace();
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+
+                        dtos.get(0).setPet_id(Integer.parseInt(pet_id));
+                        dtos.get(0).setMember_id(member_id);
+                        dtos.get(0).setPet_name(pet_name);
+                        dtos.get(0).setPet_age(pet_age);
+                        dtos.get(0).setPet_breed(pet_breed);
+                        dtos.get(0).setPet_weight(pet_weight);
+                        dtos.get(0).setPet_gender(pet_gender);
+                        dtos.get(0).setPet_nuetering(pet_nuetering);
+                        dtos.get(0).setPet_filename(dtos1.get(0).getPet_filename());
+
+
+                        finish();
+
+                        //20211125 어댑터는 activity가 없어서 아래와 같이 context와, flag를 해주고,
+                        //그 Listview에 갱신이 되도록 해준다.
+                        Intent intent = new Intent(PetListViewInfoModify_Activity.this, PetListView_Activity.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK |
+                                Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                        startActivity(intent);
+
+
+                    }else {
+                        Toast.makeText(PetListViewInfoModify_Activity.this,
+                                "반려견 정보 수정에 실패했습니다. 다시 시도해주세요.", Toast.LENGTH_SHORT).show();
+                    }
+                }
+
+
+
+            }
+        });
+
+        ivPetInfoModify.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
+                builder.setTitle("사진 선택");
+                builder.setItems(galleryOrCamera, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        if(which == 0){ // 갤러리
+                            Intent gallIntent = new Intent();
+                            gallIntent.setData(MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                            gallIntent.setType("image/*");
+                            gallIntent.setAction(Intent.ACTION_GET_CONTENT);
+
+                            startActivityForResult(gallIntent,GALLERY_REQUEST_CODE);
+
+                        }else if(which == 1){ // 카메라
+                            // 암묵적인텐트 : 사진찍기(카메라를 불러옴)
+                            Intent picIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                            // 일단 이 인텐트가 사용가능한지 체크
+                            if(picIntent.resolveActivity(getPackageManager()) != null){
+                                imgFile = null;
+                                // createFile 메소드를 이용하여
+                                imgFile = createFile();
+
+                                if(imgFile != null){
+                                    // API24 이상부터는 FileProvider 를 제공해야함
+                                    Uri imgUri = FileProvider.getUriForFile(getApplicationContext(),getApplicationContext().getPackageName()+".fileprovider",imgFile);
+                                    // 만약에 API24 이상이면
+                                    if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.N){
+                                        picIntent.putExtra(MediaStore.EXTRA_OUTPUT,imgUri);
+                                    }else{
+                                        picIntent.putExtra(MediaStore.EXTRA_OUTPUT,Uri.fromFile(imgFile));
+                                    }
+
+                                    startActivityForResult(picIntent,CAPTURE_REQUEST_CODE);
+                                }
+                            }
+                        }
+                    }
+                });
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
+            }
+        });//ivMyPagePet 클릭시 사진찍어서 데이터 저장
+
+
+
+
+    }//onCreate()
+
+    ////////////////////////////////////////////////////////////////////////////
+
+    // 위험권한
+    private void checkDangerousPermissions() {
+        String[] permissions = {
+                Manifest.permission.ACCESS_MEDIA_LOCATION,
+                Manifest.permission.CAMERA,
+                Manifest.permission.READ_EXTERNAL_STORAGE,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE
+        };
+
+        int permissionCheck = PackageManager.PERMISSION_GRANTED;
+        for (int i = 0; i < permissions.length; i++) {
+            permissionCheck = ContextCompat.checkSelfPermission(this, permissions[i]);
+            if (permissionCheck == PackageManager.PERMISSION_DENIED) {
+                break;
+            }
+        }
+
+        if (permissionCheck == PackageManager.PERMISSION_GRANTED) {
+            Toast.makeText(this, "권한 있음", Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(this, "권한 없음", Toast.LENGTH_LONG).show();
+
+            if (ActivityCompat.shouldShowRequestPermissionRationale(this, permissions[0])) {
+                Toast.makeText(this, "권한 설명 필요함.", Toast.LENGTH_LONG).show();
+            } else {
+                ActivityCompat.requestPermissions(this, permissions, 1);
+            }
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == 1) {
+            for (int i = 0; i < permissions.length; i++) {
+                if (grantResults[i] == PackageManager.PERMISSION_GRANTED) {
+                    Toast.makeText(this, permissions[i] + " 권한이 승인됨.", Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(this, permissions[i] + " 권한이 승인되지 않음.", Toast.LENGTH_LONG).show();
+                }
+            }
+        }
+    }
+
+
+    //파일생성
+    private File createFile() {
+        // 파일 이름을 만들기 위해 시간값을 생성함
+        String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        String imageFileName = "My"+timestamp;
+        // 사진파일을 저장하기 위한 경로
+        File storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
+        File curFile = null;
+        try {
+            // 임시파일을 생성함, 2번째 suffix 확장자 : 파일확장자 , 3번째 경로
+            curFile = File.createTempFile(imageFileName,".jpg",storageDir);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        // String 타입으로 임시 파일이 있는 곳의 절대경로를 저장함
+        imgFilePath = curFile.getAbsolutePath();
+
+        return curFile;
+    }
+
+    // 사진 찍은 후 데이터를 받는 곳
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(requestCode == CAPTURE_REQUEST_CODE && resultCode == RESULT_OK){
+            // 저장 처리를 함
+            //Toast.makeText(this, "사진이 잘 찍힘", Toast.LENGTH_SHORT).show();
+
+            setPic();
+        }
+        if(requestCode == GALLERY_REQUEST_CODE && resultCode == RESULT_OK){
+
+            if(data != null && resultCode == RESULT_OK){
+                Uri selectedImage = data.getData();
+                //Uri mPhotoUri = Uri.parse(getRealPathFromUri(selectedImage));
+                String[] filePathColumn = {MediaStore.Images.Media.DATA};
+                Cursor cursor = getContentResolver().query(selectedImage,filePathColumn,null,null,null);
+
+                if(cursor == null || cursor.getCount() < 1){
+                    return;
+                }
+                cursor.moveToFirst();
+                int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
+
+                if(columnIndex < 0){
+                    return;
+                }
+
+                String picturePath = cursor.getString(columnIndex);
+                cursor.close();
+
+                ExifInterface exif = null;
+                try {
+                    exif = new ExifInterface(picturePath);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                int orientation = exif.getAttributeInt(ExifInterface.TAG_ORIENTATION, ExifInterface.ORIENTATION_UNDEFINED);
+
+                Bitmap bitmap = BitmapFactory.decodeFile(picturePath);
+                Bitmap bmRotated = rotateBitmap(bitmap, orientation);
+
+
+                imgFilePath = picturePath;
+                ivPetInfoModify.setImageBitmap(bmRotated);
+            }
+
+        }
+    }
+
+    public static Bitmap rotateBitmap(Bitmap bitmap, int orientation) {
+        Matrix matrix = new Matrix();
+        switch (orientation){
+            case ExifInterface.ORIENTATION_NORMAL:
+                return bitmap;
+            case ExifInterface.ORIENTATION_FLIP_HORIZONTAL:
+                matrix.setScale(-1, 1);
+                break;
+            case ExifInterface.ORIENTATION_ROTATE_180:
+                matrix.setRotate(180);
+                break;
+            case ExifInterface.ORIENTATION_FLIP_VERTICAL:
+                matrix.setRotate(180);
+                matrix.postScale(-1, 1);
+                break;
+            case ExifInterface.ORIENTATION_TRANSPOSE:
+                matrix.setRotate(90);
+                matrix.postScale(-1, 1);
+                break;
+            case ExifInterface.ORIENTATION_ROTATE_90:
+                matrix.setRotate(90);
+                break;
+            case ExifInterface.ORIENTATION_TRANSVERSE:
+                matrix.setRotate(-90);
+                matrix.postScale(-1, 1);
+                break;
+            case ExifInterface.ORIENTATION_ROTATE_270:
+                matrix.setRotate(-90);
+                break;
+            default:
+                return bitmap;
+        }
+        try {
+            Bitmap bmRotated = Bitmap.createBitmap(bitmap, 0, 0, bitmap.getWidth(), bitmap.getHeight(), matrix, true);
+            bitmap.recycle();
+            return bmRotated;
+        }
+        catch (OutOfMemoryError e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+
+
+    // 사진을 저장처리 하는곳
+    private void setPic() {
+        // 이미지뷰의 크기 알아오기
+        int targetW = ivPetInfoModify.getWidth();
+        int targetH = ivPetInfoModify.getHeight();
+
+        // 사진의 크기 가져오기
+        BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inJustDecodeBounds = true;
+
+        int photoW = options.outWidth;
+        int photoH = options.outHeight;
+
+        // 이미지 크기를 맞출 비율을 결정
+
+        int scaleFactor = Math.min(photoW/targetW, photoH/targetH);
+
+        // 이미지뷰의 크기에 맞게 이미지크기를 조절
+        options.inJustDecodeBounds = false;
+        options.inSampleSize = scaleFactor;
+        options.inPurgeable = true;
+
+        // 비트맵 이미지 생성
+        Bitmap bitmap = BitmapFactory.decodeFile(imgFilePath);
+
+        //90도 회전
+        Matrix matrix = new Matrix();
+        matrix.setRotate(90); //90도 회전
+        Bitmap bitmap90 = Bitmap.createBitmap(bitmap, 0, 0, bitmap.getWidth(), bitmap.getHeight(), matrix, true);
+        bitmap.recycle(); //bitmap은 더이상 필요 없음으로 메모리에서 free시킨다.
+
+        // 이미지를 갤러리에 저장하기
+        galleryAddPic(bitmap90);
+        ivPetInfoModify.setImageBitmap(bitmap90);
+
+    }
+
+    private void galleryAddPic(Bitmap bitmap) {
+        FileOutputStream fos;
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q){ // API29
+            ContentResolver resolver = getContentResolver();
+            // 맵 구조를 가진 ContentValues : 파일정보를 저장함
+            ContentValues contentValues = new ContentValues();
+            contentValues.put(MediaStore.MediaColumns.DISPLAY_NAME,"Image_"+"jpg");
+            contentValues.put(MediaStore.MediaColumns.MIME_TYPE,"image/jpeg");
+            contentValues.put(MediaStore.MediaColumns.RELATIVE_PATH,Environment.DIRECTORY_PICTURES+File.separator+"TestFolder");
+
+            Uri imageUri = resolver.insert(
+                    MediaStore.Images.Media.EXTERNAL_CONTENT_URI,contentValues
+            );
+            try {
+                fos = (FileOutputStream) resolver.openOutputStream(Objects.requireNonNull(imageUri));
+                //Toast.makeText(this, "fos 작업됨", Toast.LENGTH_SHORT).show();
+                bitmap.compress(Bitmap.CompressFormat.JPEG,100,fos);
+                Objects.requireNonNull(fos);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+
+        }else{
+            // 이미지파일을 스캔해서 갤러리에 저장
+            Intent msIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
+            // 처음에 CreateFile 에서 생성해둔 이미지경로 (imgFilePath)
+            File f = new File(imgFilePath);
+            Uri contentUri = Uri.fromFile(f);
+            msIntent.setData(contentUri);
+            // 저장
+            this.sendBroadcast(msIntent);
+        }
+    }
+
+
+
+
+    //20211125 PetInfoAdd_Activity에서는 아래 두개는 override에서
+    //사용했는데, 여기는 복붙하니까 오류가 나길래 일단 주석처리함 10:52 am
+//    @Override
+//    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//
+//    }
+//
+//    @Override
+//    public void onNothingSelected(AdapterView<?> parent) {
+//
+//    }
+
+}//class PetListViewInfoModify_Activity

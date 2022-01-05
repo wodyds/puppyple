@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <FrameLayout
+        android:id="@+id/contain"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/toolbar_bg"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/option_alert_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="21dp"
+            android:background="@drawable/back"
+            android:backgroundTint="#555555" />
+
+        <TextView
+            android:id="@+id/tv_option_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="비밀번호 확인"
+            android:textColor="#555555"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contain"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingTop="60dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="60dp">
+
+
+        <EditText
+            android:id="@+id/chk_pw"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/border1dp_radius_box"
+            android:ems="15"
+            android:hint="비밀번호"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/chk_pw_chk"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_gravity="center"
+            android:background="@drawable/border1dp_radius_box"
+            android:ems="15"
+            android:hint="비밀번호 확인"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:singleLine="true"
+
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnJoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/button_background2"
+                android:text="확인"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <!--float left,right 시키려고 넣은 의미없는 view임-->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/button_background2"
+                android:text="취소"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

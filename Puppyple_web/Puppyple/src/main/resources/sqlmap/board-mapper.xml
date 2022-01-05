@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="board.mapper">
+
+	<!-- 게시글 댓글 확인 -->
+	<select id="and_BoardComment_List" resultType="board.BoardCommentVO">
+		select c.*, (select member_nickname from member where member_id = c.member_id) member_nickname
+		from board_comment c
+		where pid = #{pid}
+		order by id desc
+	</select>
+	
+	<!-- 게시글 댓글 삭제 처리 -->
+	<delete id="and_board_comment_Delete">
+		delete from board_comment where id = #{id}
+	</delete>
+
+	<!-- 댓글 등록 처리 -->
+	<insert id="and_board_CommentAdd">
+		insert into board_comment(flag,pid,member_id,content)
+		values (#{flag},#{pid},#{member_id},#{content})
+	</insert>
+
+	<!-- 게시글 첨부파일 삭제 -->
+	<update id="and_board_Modify_Deletefile">
+		update board
+		set board_filename = null, board_filepath = null
+		where id = #{id}
+	</update>
+
+	<!-- 게시글 수정 처리(파일없음) -->
+	<update id="and_board_Modify_Nofile">
+		update board 
+		set flag = #{flag}, board_title = #{board_title}, board_content = #{board_content}, 
+				   trade_category = #{trade_category, jdbcType=VARCHAR}, 
+				   trade_price = #{trade_price, jdbcType=VARCHAR}
+		where id = #{id}
+	</update>
+	
+	<!-- 게시글 수정 처리 -->
+	<update id="and_board_Modify">
+		update board 
+		set flag = #{flag}, board_title = #{board_title}, board_content = #{board_content}, 
+				   board_filename = #{board_filename, jdbcType=VARCHAR}, 
+				   board_filepath = #{board_filepath, jdbcType=VARCHAR}, 
+				   trade_category = #{trade_category, jdbcType=VARCHAR}, 
+				   trade_price = #{trade_price, jdbcType=VARCHAR}
+		where id = #{id}
+	</update>
+
+	<!-- 게시글 삭제 처리 -->
+	<delete id="and_board_Delete">
+		delete from board where id = #{id}
+	</delete>
+	
+	<!-- 게시글리스트확인(관리자 1:1문의 조회) -->
+	<select id="and_BoardList_Inquiry_admin" resultType="board.BoardVO">
+		select b.*, (select member_nickname from member where member_id = b.member_id) member_nickname
+		from board b
+		where flag in ('M')
+		order by id desc
+	</select>
+	
+	<!-- 게시글리스트확인(내가 쓴 1:1문의) -->
+	<select id="and_BoardList_Inquiry" resultType="board.BoardVO">
+		select b.*, (select member_nickname from member where member_id = b.member_id) member_nickname
+		from board b
+		where member_id = #{member_id}
+		and flag in ('M')
+		order by id desc
+	</select>
+	
+	<!-- 게시글리스트확인(event) -->
+	<select id="and_BoardList_Event" resultType="board.BoardVO">
+		select b.*, (select member_nickname from member where member_id = b.member_id) member_nickname
+		from board b
+		where flag in ('E')
+		order by id desc
+	</select>
+	
+	<!-- 게시글리스트확인(내가 쓴 글) -->
+	<select id="and_BoardList_My" resultType="board.BoardVO">
+		select b.*, (select member_nickname from member where member_id = b.member_id) member_nickname
+		from board b
+		where member_id = #{member_id}
+		order by id desc
+	</select>
+	
+	<!-- 게시글리스트확인(FAQ) -->
+	<select id="and_BoardList_FAQ" resultType="board.BoardVO">
+		select b.*, (select member_nickname from member where member_id = b.member_id) member_nickname
+		from board b
+		where flag in ('F')
+		order by id desc
+	</select>
+	
+	<!-- 게시글리스트확인(공지사항) -->
+	<select id="and_BoardList_Notice" resultType="board.BoardVO">
+		select b.*, (select member_nickname from member where member_id = b.member_id) member_nickname
+		from board b
+		where flag in ('N')
+		order by id desc
+	</select>
+	
+	<!-- 게시글리스트확인(중고거래) -->
+	<select id="and_BoardList_Trade" resultType="board.BoardVO">
+		select b.*, (select member_nickname from member where member_id = b.member_id) member_nickname
+		from board b
+		where flag in ('T')
+		order by id desc
+	</select>
+	
+	<!-- 게시글리스트확인(갤러리) -->
+	<select id="and_BoardList_Gallery" resultType="board.BoardVO">
+		select b.*, (select member_nickname from member where member_id = b.member_id) member_nickname
+		from board b
+		where flag in ('G')
+		order by id desc
+	</select>
+	
+	<!-- 게시글리스트확인(정보공유) -->
+	<select id="and_BoardList_Info" resultType="board.BoardVO">
+		select b.*, (select member_nickname from member where member_id = b.member_id) member_nickname
+		from board b
+		where flag in ('I')
+		order by id desc
+	</select>
+	
+	<!-- 게시글리스트확인(자유게시판) -->
+	<select id="and_BoardList_Free" resultType="board.BoardVO">
+		select b.*, (select member_nickname from member where member_id = b.member_id) member_nickname
+		from board b
+		where flag in ('B')
+		order by id desc
+	</select>
+	
+	<!-- 게시글리스트확인(전체카테고리) -->
+	<select id="and_BoardList_All" resultType="board.BoardVO">
+		select b.*, (select member_nickname from member where member_id = b.member_id) member_nickname
+		from board b
+		where flag not in ('F','N','E','M')
+		order by id desc
+	</select>
+	
+	<!-- 게시글리스트확인(전체카테고리) -->
+	<select id="and_MainBoardList_All" resultType="board.BoardVO">
+		<![CDATA[
+			select b.*, (select member_nickname from member where member_id = b.member_id) member_nickname
+			from board b
+			where flag not in ('F','N','E','M')
+			and rownum <= 3
+			order by id desc
+		]]>
+	</select>
+	
+	<!-- 게시글리스트확인(전체카테고리) -->
+	<select id="and_MainBoardList_Notice" resultType="board.BoardVO">
+		<![CDATA[
+			select b.*, (select member_nickname from member where member_id = b.member_id) member_nickname
+			from board b
+			where flag in ('N')
+			and rownum <= 3
+			order by id desc
+		]]>
+	</select>
+	
+	<update id="and_update_boardCount">
+		update board
+		set board_readcnt = board_readcnt + 1
+		where id = #{id}
+	</update>
+	
+	<!-- 게시글 상세 조회 -->
+	<select id="and_Board_detail" resultType="board.BoardVO">
+		select b.*, (select member_nickname from member where member_id = b.member_id) member_nickname
+		from board b
+		where id = #{id}
+	</select>
+	
+	<!-- 게시글등록 -->
+	<insert id="and_board_Add">
+		insert into board (flag, member_id, board_title, board_content, board_filename, board_filepath,trade_category, trade_price)
+		values (#{flag}, #{member_id}, #{board_title},#{board_content}, #{board_filename, jdbcType=VARCHAR},#{board_filepath, jdbcType=VARCHAR}, #{trade_category, jdbcType=VARCHAR},#{trade_price, jdbcType=VARCHAR})
+	</insert>
+	
+	<!-- 게시글등록(파일없을때) -->
+	<insert id="and_board_Add_Nofile">
+		insert into board (flag, member_id, board_title, board_content, trade_category, trade_price)
+		values (#{flag}, #{member_id}, #{board_title},#{board_content}, #{trade_category, jdbcType=VARCHAR},#{trade_price, jdbcType=VARCHAR})
+	</insert>
+
+</mapper>

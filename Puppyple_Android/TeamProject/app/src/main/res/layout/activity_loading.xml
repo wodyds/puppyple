@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loading_background"
+    android:orientation="vertical"
+    tools:context="com.example.Loading_activity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/foot1"
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/foot1" />
+
+                <ImageView
+                    android:id="@+id/foot2"
+                    android:layout_width="250dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/foot2" />
+
+                <ImageView
+                    android:id="@+id/foot3"
+                    android:layout_width="250dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/foot3" />
+
+                <ImageView
+                    android:id="@+id/foot4"
+                    android:layout_width="250dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/foot4" />
+
+                <ImageView
+                    android:id="@+id/foot5"
+                    android:layout_width="250dp"
+                    android:layout_height="88dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/foot5" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/loadingText"
+                android:layout_width="377dp"
+                android:layout_height="561dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-12dp"
+                android:src="@drawable/loading_text" />
+
+            <ImageView
+                android:id="@+id/loadingTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/loading_title"
+                android:visibility="invisible" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
+
+
+
+    <!--    <FrameLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="650dp">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/LoadingImg"-->
+    <!--            android:layout_width="59dp"-->
+    <!--            android:layout_height="57dp"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_marginTop="16dp"-->
+    <!--            android:src="@drawable/application"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/loadingText"-->
+    <!--            tools:layout_editor_absoluteX="176dp" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/loadingText"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="541dp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="PUPPYPLE"-->
+    <!--            android:textColor="#FFFFFF"-->
+    <!--            android:textSize="30sp"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.497"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.364" />-->
+    <!--    </FrameLayout>-->

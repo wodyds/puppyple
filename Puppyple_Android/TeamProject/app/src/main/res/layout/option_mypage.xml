@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/mypage_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <FrameLayout
+        android:id="@+id/contain"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/toolbar_bg"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/mypage_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="21dp"
+            android:background="@drawable/back"
+            android:backgroundTint="#555555" />
+
+        <TextView
+            android:id="@+id/tv_option_mypage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="마이페이지"
+            android:textColor="#555555"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="75dp"
+        >
+
+        <TextView
+            android:id="@+id/tvMyPagePetInfoModify"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/border_bottom"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:text="반려동물 정보 확인" />
+        <TextView
+            android:id="@+id/tvMyPageMemberModify"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/border_bottom"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:text="회원정보 수정" />
+        <TextView
+            android:id="@+id/tvmypost"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/border_bottom"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:text="작성한 글 보기" />
+        <TextView
+            android:id="@+id/tvservicequit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/border_bottom"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:text="서비스탈퇴" />
+
+    </LinearLayout>
+
+    <!--
+        <TextView
+            android:id="@+id/mypage_cu_center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="고객센터 010-1234-5678"
+            android:gravity="center"
+            android:layout_marginTop="660dp"
+            android:background="#CCD3D1D1"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"/>
+    -->
+
+
+</RelativeLayout>

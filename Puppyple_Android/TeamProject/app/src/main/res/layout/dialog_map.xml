@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="300dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/border_radius20dp_box">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:textSize="24sp"
+        android:padding="30dp"
+        android:text="oooo애견카페" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="광주 서구 죽봉대로 135"
+            android:textSize="18dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(우편번호) 61914"
+            android:textSize="18dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(지번) 광천동 625-3"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="010-1234-5687"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/dialog_map_address"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="확인"
+            android:layout_marginLeft="230dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:gravity="center_vertical|center_horizontal"
+        />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

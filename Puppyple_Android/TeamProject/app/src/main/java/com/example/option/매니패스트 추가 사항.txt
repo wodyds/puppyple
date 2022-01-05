@@ -1,0 +1,14 @@
+</application> 상단에 복붙
+
+<activity
+            android:name=".Option_Access1">
+
+        </activity>
+        <activity
+            android:name=".Option_Access2">
+
+        </activity>
+        <activity
+            android:name=".Option_Access3">
+
+        </activity>

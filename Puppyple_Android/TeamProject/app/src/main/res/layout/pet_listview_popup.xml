@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="340dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/border_radius20dp_box"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ivPetListViewPopupTitle"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="펫 상세정보"
+            android:textColor="#616161"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivPetInfoPopupBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/x"
+            android:backgroundTint="#616161" />
+
+    </LinearLayout>
+
+    <ImageView
+
+        android:id="@+id/ivPetListViewPopupImage"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPetListViewPopupName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="(이름)"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvPetListViewPopupAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="(나이)"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvPetListViewPopupWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(몸무게)"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPetListViewPopupBreed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="(견종)"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvPetListViewPopupGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="(성별)"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvPetListViewPopupNuetering"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(중성화여부)"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPetInfoPopupModify"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_background2"
+        android:text="수정"
+        android:textColor="#fff"
+        android:textSize="14sp" />
+
+</LinearLayout>

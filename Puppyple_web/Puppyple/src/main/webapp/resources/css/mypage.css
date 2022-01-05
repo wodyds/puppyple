@@ -1,0 +1,981 @@
+@charset "UTF-8";
+
+
+/* 초기화 값  */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+	overflow: hidden;
+}
+a {
+	outline: 0;
+	text-decoration: none;
+	color: #333;
+	cursor: pointer;
+}
+img {
+	border: 0;
+}
+body {
+	width: 100%;
+	margin: 0 auto;
+	color: #444;
+	font-size: 15px;
+	font-family: 'NanumSquareRound', sans-serif;
+}
+
+#mypage{ 
+	width: 100%;
+	margin: 0 auto;
+    height:auto;
+	overflow:hidden;
+	background-color: #fff; 
+}
+	
+#mypage_wrap{ 
+	width: 1200px; 
+	margin: 0 auto;
+	height: 100%;
+	padding-top: 70px;
+	padding-bottom: 70px; 
+}
+#layout1{
+	display: block;
+	float: left;
+	width: 25%;
+	margin-bottom: 87px;
+}
+#layout2{
+	display: block;
+	float: right;
+	width: 70%;
+}
+
+/*--------------- <section id="layout1"> ---------------*/
+
+.mypage_title{
+	width: 100%;
+	height: 180px;
+	line-height: 190px;
+	text-align: center;
+	font-size: 25px;
+	color: #fff;
+	font-weight: 400;
+	background: linear-gradient(175deg, rgba(130,58,230,1) 0%, rgba(94,17,227,1) 100%);
+}
+.color{
+	width: 100%;
+    height: 70px;
+    background-image: url(../imgs/vis2_resize.png);
+    background-color: #3d1474;
+    background-size: 162%;
+    background-repeat: no-repeat;
+    background-position: 23% 11%;
+}
+.mypage_menu li{
+	width: 100%;
+	height: 70px;
+	font-size: 15px;
+	line-height: 74px;
+	padding-left: 30px;
+	border-bottom: 1px solid #cecece;
+	background-color: #fafafa;
+	text-align: left;
+}
+
+
+/*--------------- <section id="layout2"> ---------------*/
+
+
+#layout2>div{ /* 간격주려고 만듦 */
+	padding-top: 50px;
+	padding-left: 50px;
+}
+#mp_wrap{
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+/* ------ mypage 1-1 (회원정보 : 기존 회원정보 보여주는 페이지) ------ */
+
+#user_info{
+	width: 100%;
+}
+h5{
+	font-size: 15px;
+	color: #9c9c9c;
+	text-align: left;
+	margin-bottom: 20px;
+	font-weight: 400;
+	text-align: left;
+}
+
+#user_info_table{
+	width: 100%;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+#user_info_table th{
+	text-align: center;
+	width: 30%;
+	padding: 30px;
+	border: 1px solid #dedede;
+	background-color: #f0f0f0;
+	font-size: 15px;
+	font-weight: 700;
+}
+#user_info_table td{
+	text-align: left;
+	width: 70%;
+	font-size: 15px;
+	padding: 30px;  
+	border: 1px solid #dedede;
+}
+#modify{
+	width: 200px;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 150px;
+}
+#modify_btn{
+	width: 100%;
+	height: 48px;
+	border: 0px;
+	border-radius: 10px;
+	padding: 0px;
+	text-align: center;
+	background-color: #731aed;
+	color: #fff;
+	cursor: pointer;
+}
+
+
+/* ------ mypage 1-2 (회원정보수정: 비밀번호 확인 페이지) ------ */
+
+#mypage_menu_title{
+	width: 100%;
+	height: 50px;
+	text-align: left;
+	border-bottom: 1px solid #d2d2d2;	
+	font-weight: 400;
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+#mypage_menu_title h3{
+	text-align: left;
+}
+
+#checkForm{ 
+	width: 100%;
+	height: 585px;
+	margin-top: 30px;
+}
+.fa-check{ 
+	display: inline-block;		
+	color: #731aed; 
+	font-size: 15px;
+	margin-right: 10px;
+}
+#checkForm p{
+	display: inline-block;		
+	font-size: 14px;
+	font-weight: 700;
+}
+#checkForm .form{
+	margin-top: 40px;
+}	
+#checkForm label{
+	margin-right: 20px;
+	font-size: 15px;
+}
+#pw_check{
+	border: 1px solid #d2d2d2;
+	width: 300px;
+	height: 40px;
+	padding-left: 10px;
+	margin-right: 10px;
+}
+input:focus {
+	outline: none;
+}
+#checkForm .submit{
+	width: 60px;
+	height: 40px;
+	background-color: #731aed;
+	border: 0;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 13px;
+}
+
+/* ------ mypage 1-3 (회원정보수정: 수정 페이지) ------ */
+
+#user_info_modify {
+	width: 100%;
+	margin: 0 auto;
+}
+#user_info_modify h5{
+	display: inline-block;
+    font-size: 15px;
+    float: left;
+    width: 90%;
+}
+
+#leave {
+    width: 10%;
+    float: right;
+    height: 40px;
+    margin-top: -12px;
+}
+#leave_btn {
+    float: right;
+    width: 59px;
+    height: 33px;
+    background-color: #c7c7c7;
+    border: 0;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 33px;
+}
+
+#user_info_modify #form_wrap{
+	display: block;
+	width: 94%;
+	margin: 0 auto;
+	height: 100%;
+    overflow: hidden;
+	padding: 30px 0;
+}
+
+#idForm, #pwForm, #pwForm2, #nicknameForm, #phoneForm, #emailForm{
+	width: 100%;
+	height: 95px;
+	padding-top: 20px;
+}
+
+#idForm span{color: #731aed; font-size: 12px; }
+
+#member_id{ color: #b5b5b5; }
+
+#form_wrap label {
+	float: left;
+	display: block;
+	width: 20%;
+	line-height: 50px;
+	font-size: 16px;
+	font-family: 'Godo', 'Sans-serif';
+	font-weight: 400;
+}
+#form_wrap input{
+	float: right;
+	border: 1px solid #d2d2d2;
+	width: 75%;
+	height: 48px;
+	font-size: 15px;
+	padding-left: 15px;
+}
+#form_wrap input::placeholder{
+	color: #d6d6d6;
+	font-weight: 300;
+}
+
+#form_wrap input:focus {
+	outline: none;
+}
+/* .id_warning_notext,.id_warning_not, .id_warning_used, .pw_warning_notext, .pw_warning_not, .pw_warning_not2, .pw_warning_notext2, .nic_warning_notext, .nic_warning_not, .nic_warning_used, .phone_warning_notext, .phone_warning_not, .email_warning_notext, .email_warning_not{
+   display: none;
+   font-size: 13px;
+   margin-top: 57px;
+   margin-left: 161px;
+} */
+
+.warning{ 
+	display: none;
+	clear: both;
+	color: #731aed; 
+	font-size: 13px; 
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	padding-top: 5px;
+	padding-left: 177px;
+}
+.warning p{ 
+	padding-left: 5px;
+}
+
+.fas {
+	color: #731aed;
+}
+
+
+div p{
+	display: inline-block;
+}
+
+#user_info_modify .pw_wrap{
+	float: right;
+	border: 1px solid #d2d2d2;
+	background-color: #fff;
+	width: 75%;
+	height: 48px;
+}
+#user_info_modify #member_pw {
+    width: 91% !important;
+    height: 100% !important;
+    border: 0 !important;
+    padding-left: 15px !important;
+    float: left !important;
+} 
+.eye{
+	display: inline-block;
+	width: 8%;
+	height: 100%;
+	line-height: 48px;
+	color: #b4b4b4;
+	font-size: 18px;
+	float: right;
+}
+
+#end{
+	width: 100%;
+	height: 60px;
+	font-size: 15px;
+	border: none;
+	margin-top: 40px;
+	margin-bottom: 60px;	
+}
+#end #submit{
+	display: inline-block;
+	width: 48%;
+	height: 50px;
+	float: left;
+	color: #fff;
+	background-color: #731aed;
+	border: 0;
+	border-radius: 10px; 
+	cursor: pointer;
+}
+#end #reset{
+	display: inline-block;
+	width: 48%;
+	height: 50px;
+	float: right;
+	color: #fff;
+	background-color: #731aed;
+	border: 0;
+	border-radius: 10px;
+	cursor: pointer; 
+}
+/* ------ mypage 1-4 (회원정보수정: 회원 탈퇴시 비번확인) ------ */
+
+
+#checkForm{ 
+	width: 100%;
+	height: 585px;
+	margin-top: 30px;
+}
+.fa-check{ 
+	display: inline-block;		
+	color: #731aed; 
+	font-size: 15px;
+	margin-right: 10px;
+}
+
+#checkForm .form{
+	margin-top: 40px;
+}	
+#checkForm label{
+	margin-right: 20px;
+	font-size: 15px;
+}
+#pw_check_leave{
+	border: 1px solid #d2d2d2;
+	width: 300px;
+	height: 40px;
+	padding-left: 10px;
+	margin-right: 10px;
+}
+input:focus {
+	outline: none;
+}
+#checkForm .submit{
+	width: 60px;
+	height: 40px;
+	background-color: #731aed;
+	border: 0;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 13px;
+}
+
+
+/* ------ mypage 2-1 (반려동물정보: 리스트) ------ */
+
+#pet_info_table{
+   width: 100%;
+   height: auto;
+   overflow: hidden;
+   margin: 0 auto;
+}
+
+#pet_list_layout{
+   float: left;
+   width: 85%;
+   height: 300px;
+   background-color: #ededed;
+   border-radius: 20px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+/* #pet_list_layout 안에 사진 배치 */
+#pet_list_inner1{ 
+   width: 40%; 
+   height: 100%; 
+   float: left;
+   position: relative;
+}
+#photo{ 
+   width: 170px;
+   height: 170px;
+   background-color: #731aed;
+   border: 0;
+   border-radius: 1000px; /* 원으로 변형  */
+   /* 가로세로 가운데 정렬  */
+   position: absolute; 
+   top: 50%;
+   left: 50%;
+   margin-top: -85px;
+   margin-left: -85px; 
+   /* 비회원 기본 이미지*/
+   background-image: url("../imgs/user_basic.png");
+   background-position: center;
+   background-size: 103%;
+}   
+
+/* #pet_list_layout2 안에 이름 ~ 중성화 배치 */
+
+#pet_list_inner2{ 
+   width: 60%; 
+   height: 100%; 
+   float: right;
+   padding: 50px 10px 50px 10px;
+   line-height: 95px;
+}
+
+#pet_list_inner2>div{
+   width: 50%;
+   height: 33.333%;
+   float: left;
+}
+
+#pet_list_inner2 .title{
+   float:left;
+   width: 33%;
+   height: 100%;
+   color: #444;
+   text-align: center;
+   font-size: 14px;
+   font-weight: 800;
+}
+#pet_list_inner2 .content{
+   float:left;
+   width: 67%;
+   height: 100%;
+   text-align: left;
+   font-size: 14px;
+   padding-left: 20px;
+}
+
+/* pet_modifiy_box 안에 수정,삭제 */
+#pet_modifiy_box{
+   float: right;
+   width: 15%;
+   height: 300px;
+   text-align: center;
+}
+#pet_modifiy_btn{
+   display: block;
+   width: 55px;
+   height: 40px;
+   background-color: #747474;
+   border: 0;
+   border-radius: 10px;
+   color: #fff;
+   font-size: 13px;
+   margin-top: 100px;
+   margin-bottom: 30px;
+   margin-left: 40px;
+   cursor: pointer;
+}
+#pet_delete_btn{
+   display: block;
+   width: 55px;
+   height: 40px;
+   background-color: #747474;
+   border: 0;
+   border-radius: 10px;
+   color: #fff;
+   font-size: 13px;
+   margin-left: 40px;
+   cursor: pointer;
+}
+.admin_pet_delete_btn{ 
+	padding-left: 0;
+	margin-top: 153px;
+	margin-left: 51px !important;
+}
+
+/* 추가버튼 */
+#addPet{
+   width: 96%;
+   margin: 0 auto;
+   text-align: center;
+}
+#addPet_btn{
+   width: 70px;
+   height: 45px;
+   background-color: #731aed;
+   border: 0;
+   border-radius: 10px;
+   color: #fff;
+   font-size: 13px;
+   margin-top: 30px;
+   margin-bottom: 150px;
+   cursor: pointer;
+}
+
+/* 펫 이미지 */
+#pet_preview {
+	width: 170px;
+   height: 170px;
+   background-color: #731aed;
+   border: 0;
+   border-radius: 1000px; /* 원으로 변형  */
+   /* 가로세로 가운데 정렬  */
+   position: absolute; 
+   top: 50%;
+   left: 50%;
+   margin-top: -85px;
+   margin-left: -85px; 
+   background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#pet_preview_not {
+	width: 170px;
+   height: 170px;
+   background-color: #731aed;
+   border: 0;
+   border-radius: 1000px; /* 원으로 변형  */
+   /* 가로세로 가운데 정렬  */
+   position: absolute; 
+   top: 50%;
+   left: 50%;
+   margin-top: -85px;
+   margin-left: -85px; 
+	background-image: url("../imgs/mypage_user_basic.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#pet_preview-img {
+	width: 150px;
+	height: 150px;
+	border-radius: 1000px;
+}
+
+/* #preview_image {
+	width: 170px;
+	height: 170px;
+} */
+
+
+/* ------ mypage 2-2 (반려동물정보: 반려동물 수정 페이지) ------ */
+
+
+#pet_info_modify {
+   width: 100%;
+   margin: 0 auto;
+}
+
+
+#nameForm, #ageForm, #genderForm, #breedForm, #weightForm, #nueteringForm{
+   width: 100%;
+   height: 95px;
+   padding-top: 20px;
+}
+#photoForm{
+   width: 100%;
+   height: 197px;
+   padding-top: 20px;
+} 
+#photoForm>label{
+   line-height: 150px !important;
+} 
+
+
+#pet_info_modify #form_wrap{
+   width: 80%;
+   margin: 0 auto;
+}
+#pet_info_modify #form_wrap label{
+   float: left;
+   display: block;
+   width: 20%;
+   line-height: 50px;
+   font-size: 16px;
+   font-family: 'Godo', 'Sans-serif';
+   font-weight: 400;
+}
+#pet_info_modify #form_wrap input{
+   float: right;
+   border: 1px solid #d2d2d2;
+   width: 75%;
+   height: 48px;
+   font-size: 15px;
+   padding-left: 15px;
+}
+#pet_info_modify #form_wrap input::placeholder{
+   color: #d6d6d6;
+   font-weight: 300;
+}
+
+#pet_info_modify #form_wrap input:focus {
+   outline: none;
+}
+
+#pet_info_modify  .warning{ 
+	padding-left: 144px;
+}
+
+
+/* ------ mypage 2-3 (반려동물정보: 반려동물 추가 페이지) ------ */
+
+
+#pet_info_add {
+   width: 100%;
+   margin: 0 auto;
+}
+
+
+#nameForm, #ageForm, #genderForm, #breedForm, #weightForm, #nueteringForm{
+   width: 100%;
+   height: 95px;
+   padding-top: 20px;
+}
+#photoForm{
+   width: 100%;
+   height: 197px;
+   padding-top: 20px;
+} 
+#photoForm>label{
+   line-height: 150px !important;
+} 
+
+
+#pet_info_add #form_wrap{
+   width: 80%;
+   margin: 0 auto;
+}
+#pet_info_add #form_wrap label{
+   float: left;
+   display: block;
+   width: 20%;
+   line-height: 50px;
+   font-size: 16px;
+   font-family: 'Godo', 'Sans-serif';
+   font-weight: 400;
+}
+#pet_info_add #form_wrap input{
+   float: right;
+   border: 1px solid #d2d2d2;
+   width: 75%;
+   height: 48px;
+   font-size: 15px;
+   padding-left: 15px;
+}
+#pet_info_add #form_wrap input::placeholder{
+   color: #d6d6d6;
+   font-weight: 300;
+}
+
+#pet_info_add #form_wrap input:focus {
+   outline: none;
+}
+
+
+/* 사진란  */
+#photoForm_inner{
+   float: right;
+   width: 75%;
+}   
+.preview{
+   float: left;
+   width: 150px;
+   height: 150px;
+   border: 1px solid #d2d2d2;
+   border-radius: 1000px;
+   margin-right: 39px;
+}
+.pet_preview{
+   float: left;
+   width: 150px;
+   height: 150px;
+   border: 1px solid #d2d2d2;
+   border-radius: 1000px;
+   margin-right: 39px;
+}
+.preview_modify{
+   /* 비회원 기본 이미지 html에 일단 깔아놈*/
+   width: 101%;
+   height: 101%;
+   border: 0;
+}
+.file-wrap{
+   float: left;
+   position: relative;   
+}
+
+#pet_file-name{
+	margin-top: 36px;
+	margin-left: 40px;
+	width: 195px;
+	height: 18px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+} 
+input[type=file] , #delete-file { display : none;}
+.file-label {
+    position: absolute;
+    top: 33px;
+    left:0px;
+    width: auto !important;
+    line-height: 0px !important; 
+    font-size: 25px !important;
+}
+
+#photoForm_inner .fas{ color: #731aed; }
+
+
+
+#delete-file{
+   position: absolute;
+    top: 83px;
+    left:0px;
+   display: block;
+   float: left;
+   font-size: 25px;
+}
+
+
+/* 성별란 */
+#genderForm_inner{
+   float: right;
+   width: 75%;
+   height: 48px;
+   font-size: 15px;
+}
+
+.radio {/* 기본 radio버튼 디자인 숨김 */
+    display: none; 
+}
+.radio-wrap {/* 텍스트 위치 조정을 위한 wrapper */
+   position: relative;
+}
+.radio+.radio-label {/* check되지 않았을 때 스타일 */
+   position: absolute;
+   display: inline-block !important;
+   cursor: pointer;
+   width: 24px !important;
+   height: 24px;
+   border-radius: 1000px;
+   border: 1px solid #d2d2d2;
+   position: relative;
+}
+.radio.M+.radio-label.M{
+   top: 13px;
+   left: 0px;
+}
+.radio.F+.radio-label.F{
+   top: 13px;
+   left: 175px;
+}
+.radio:checked+.radio-label {/* check되었을 때 스타일 */
+   background-color: #fff;
+   border: 1px solid #731aed;
+}
+.radio:checked+.radio-label::after {/* check되었을 때 내용물 : 라디오버튼표시 */
+   content: '\f111';
+   font-family: "Font Awesome 5 Free";
+   font-weight: 600;
+   color: #731aed;
+   font-size: 17px;
+   width: 24px;
+   height: 24px;
+   line-height: 24px;
+   text-align: center;
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -12px;
+    margin-left: -12px;
+}
+.radio-text { /* radio 텍스트 */
+   position: absolute;
+   top: 4px;
+   left: 28px;
+   display: inline-block;
+   width: 40px;
+   font-size: 15px;
+   font-family: 'NanumSquareRound',sans-serif ;
+    font-weight: 400 ;
+    line-height: normal;
+    padding-left: 10px;
+}
+
+
+/* 중성화 */
+#nueteringForm_inner{
+   float: right;
+   width: 75%;
+   height: 48px;
+   font-size: 15px;
+}
+
+
+.radio+.radio-label {/* check되지 않았을 때 스타일 */
+   position: absolute;
+   display: inline-block !important;
+   cursor: pointer;
+   width: 24px !important;
+   height: 24px;
+   border-radius: 1000px;
+   border: 1px solid #d2d2d2;
+   position: relative;
+}
+.radio.Y+.radio-label.Y{
+   top: 13px;
+   left: 0px;
+}
+.radio.N+.radio-label.N{
+   top: 13px;
+   left: 175px;
+}
+.radio:checked+.radio-label {/* check되었을 때 스타일 */
+   background-color: #fff;
+   border: 1px solid #731aed;
+}
+.radio:checked+.radio-label::after {/* check되었을 때 내용물 : 라디오버튼표시 */
+   content: '\f111';
+   font-family: "Font Awesome 5 Free";
+   font-weight: 600;
+   color: #731aed;
+   font-size: 17px;
+   width: 24px;
+   height: 24px;
+   line-height: 24px;
+   text-align: center;
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -12px;
+    margin-left: -12px;
+}
+.radio-text { /* radio 텍스트 */
+   position: absolute;
+   top: 4px;
+   left: 28px;
+   display: inline-block;
+   width: 40px;
+   font-size: 15px;
+   font-family: 'NanumSquareRound',sans-serif ;
+    font-weight: 400 ;
+    line-height: normal;
+    padding-left: 10px;
+}
+
+
+#pet_info_add  .warning{ 
+	padding-left: 161px
+}
+
+
+
+/* ------ mypage 3-1 (내가 쓴 글 보기: 리스트형식) ------ */
+
+#mp_table_wrap{
+	width: 93%;
+    margin: 0 auto;
+}
+#mp_table_wrap .list-title-mypage {
+	background: #ebebeb;
+    color: #636363;
+    font-weight: bold;
+    text-align: center;
+    
+}
+#mp_table_wrap h3{
+	margin-bottom: 20px;
+}
+#mp_table_wrap .text-content{
+	text-align: left;
+	text-indent: 20px;
+}
+#mp_post_tbody tr{
+    border-bottom: 1px solid #d2d2d24a;
+    font-size: 14px;
+}
+#mp_post_tbody li{
+    font-size: 13px;
+}
+#mp_post_tbody a:hover{
+	font-weight: 700;
+	color: #731aed;
+}
+.mp_search{
+    margin-top: 30px;
+    float: none !important;
+}
+
+/* ------ mypage 관리자 페이지(퍼피플 정보) ------ */
+
+#admin_wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.list_info{
+	width: 100%;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+.list_info th{
+	text-align: center;
+	width: 35%;
+	padding: 20px;
+	border: 1px solid #dedede;
+	background-color: #f0f0f0;
+	font-size: 15px;
+	font-weight: 700;
+}
+.list_info td{
+	text-align: left;
+	width: 60%;
+	font-size: 15px;
+	padding: 20px;  
+	border: 1px solid #dedede;
+	padding-left: 30px;
+}

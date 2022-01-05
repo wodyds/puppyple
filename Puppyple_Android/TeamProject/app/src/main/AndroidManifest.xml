@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.PUPPYPLE">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 진동 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 20211116 user-permission 추가 by JP -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" /> <!-- 여기까지 -->
+    <!-- 20211116 user-permission 추가 by JP -->
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" /> <!-- API30이상에서는 queries사용해서 권한부여를 한번 더 해야함. -->
+    <!-- 여기까지 -->
+    <!-- 추가 -->
+    <queries>
+
+        <!-- WebView -->
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="http" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="https" />
+        </intent>
+        <!-- Camera -->
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+        <!-- Gallery -->
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT" />
+        </intent>
+        <!-- Youtube -->
+        <intent>
+            <action android:name="android.media.browse.MediaBrowserService" />
+        </intent>
+    </queries> <!-- SMS 인증 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="com.example.login.GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/application"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/application"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PUPPYPLE"
+        android:usesCleartextTraffic="true">
+
+        <!-- 20211116 user-permission 추가 by JP -->
+        <!-- http 라이브러리 사용 -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" /> <!-- 여기까지 -->
+        <!-- 네이티브 앱 키 추가 -->
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" /> <!-- android:value="93afe7eedc6049bdb661cbd138b3045a" /> -->
+         <!-- 메인 화면 -->
+        <activity
+            android:name="com.example.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- home -->
+        <activity android:name="com.example.home.home_Activity" />
+
+        <!-- location -->
+
+        <!-- community -->
+        <activity android:name="com.example.community.Community_register" />
+        <activity android:name="com.example.community.Community_Detail" />
+        <activity android:name="com.example.community.Community_Picture" />
+        <activity android:name="com.example.community.Community_Modify" />
+        <activity android:name="com.example.community.Community_WriterDetail" />
+        <!-- youtube -->
+        <activity android:name="com.example.youtube.Youtube_1"/>
+        <!-- petInfo -->
+        <activity android:name="com.example.petInfo.PetInfoAdd_Activity" />
+        <activity android:name="com.example.petInfo.PetListView_Activity" />
+        <!--20211125 펫정보수정액티비티 추가 by JP-->
+        <activity android:name="com.example.petInfo.PetListViewInfoModify_Activity"
+                   android:exported="true"/>
+
+        <!--20211210 webcam 관련 액티비티 추가 by JP-->
+        <activity android:name="com.example.WebCamActivity" />
+
+        <!-- option -->
+        <!--<activity android:name="com.example.option.Alert_Setting" />-->
+        <activity android:name="com.example.option.Option_FAQ" />
+        <activity android:name="com.example.option.Option_FAQ_admin" />
+        <activity android:name="com.example.option.Option_Location" />
+        <activity android:name="com.example.option.Option_Mypage" />
+        <activity android:name="com.example.option.Option_Notice" />
+        <activity android:name="com.example.option.Option_Notice_admin" />
+        <activity android:name="com.example.option.Option_Personal" />
+        <activity android:name="com.example.option.Option_Service" />
+        <activity android:name="com.example.option.Option_Event" />
+        <activity android:name="com.example.option.Option_Event_admin" />
+        <activity android:name="com.example.option.Option_ChkMyPost" />
+        <activity android:name="com.example.option.Option_member_modify" />
+        <activity android:name="com.example.option.Option_member_quit" />
+        <activity android:name="com.example.option.Option_pet_info" />
+        <activity android:name="com.example.option.Notice_register" />
+        <activity android:name="com.example.option.Notice_Detail" />
+        <activity android:name="com.example.option.Notice_Modify" />
+        <activity android:name="com.example.option.Faq_register" />
+        <activity android:name="com.example.option.Faq_Detail" />
+        <activity android:name="com.example.option.Faq_Modify" />
+        <activity android:name="com.example.option.Event_Detail" />
+        <activity android:name="com.example.option.Event_Modify" />
+        <activity android:name="com.example.option.First_Event" />
+        <activity android:name="com.example.option.Second_Event" />
+        <activity android:name="com.example.option.Event_Img" />
+        <activity android:name="com.example.option.Option_inquiry" />
+        <activity android:name="com.example.option.Option_inquiry_admin" />
+        <activity android:name="com.example.option.Inquiry_Register" />
+
+
+
+
+        <!-- login -->
+        <activity android:name="com.example.login.Login_Activity" />
+        <activity android:name="com.example.login.Login_Idfind" />
+        <activity android:name="com.example.login.Login_Pwfind" />
+        <activity android:name="com.example.login.KakaoPlus" />
+        <activity android:name="com.example.login.NaverPlus" />
+
+
+        <!-- join -->
+        <activity android:name="com.example.join.Join_Activity" />
+        <activity android:name="com.example.join.SubActivityLocation" />
+        <activity android:name="com.example.join.SubActivityPersonal" />
+        <activity android:name="com.example.join.SubActivityService" />
+
+
+        <activity android:name="com.example.NaviActivity" />
+
+        <!-- 로딩화면 -->
+        <activity
+            android:name="com.example.Loading_activity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepath" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navi"
+    android:layout_width="match_parent"
+    android:layout_height="730dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:background="@drawable/nav_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/navi_back"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="375dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/x"
+                android:backgroundTint="#FFFFFF"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/navi_Img"
+            android:layout_width="203dp"
+            android:layout_height="165dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/user_basic2"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="58dp" />
+
+        <TextView
+            android:id="@+id/navi_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="사용자님 반갑습니다"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            tools:layout_editor_absoluteX="145dp"
+            tools:layout_editor_absoluteY="65dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navi_list"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="290dp"
+        android:orientation="vertical"
+        android:weightSum="6">
+
+
+        <TextView
+            android:id="@+id/navi_mypage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_bottom"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:text="마이페이지"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/navi_inquiry"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_bottom"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:text="1:1 문의"
+            android:textSize="14dp" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/navi_alert"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            android:background="@drawable/box_border"-->
+        <!--            android:gravity="center|left"-->
+        <!--            android:paddingLeft="20dp"-->
+        <!--            android:text="알림설정"-->
+        <!--            android:textSize="14dp"-->
+        <!--            android:layout_weight="1"/>-->
+
+        <TextView
+            android:id="@+id/navi_notice"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_bottom"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:text="공지사항"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/navi_faq"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_bottom"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:text="FAQ"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/navi_event"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_bottom"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:text="이벤트"
+            android:textSize="14dp" />
+
+
+
+        <TextView
+            android:id="@+id/navi_login"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_bottom"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:text="로그인"
+            android:textSize="14dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/navi_list"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/navi_cu_center"
+            android:layout_width="260dp"
+            android:layout_height="97dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:background="#60E4E4E4"
+            android:gravity="center"
+            android:text="고객센터   062-362-7797\n\n(평일 9:00 ~ 18:00)"
+            android:textSize="13dp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

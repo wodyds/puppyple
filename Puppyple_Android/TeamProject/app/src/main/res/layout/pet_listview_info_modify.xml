@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/contain"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/toolbar_bg"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ivPetInfoModify_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="21dp"
+            android:background="@drawable/back"
+            android:backgroundTint="#555555" />
+
+        <TextView
+            android:id="@+id/tvPetInfoModify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="반려동물 정보수정"
+            android:textColor="#555555"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="34dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="34dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivPetInfoModify"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="13dp"
+                android:src="@drawable/user_basic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="사진을 변경하시려면 이미지를 클릭하세요"
+                android:textColor="#A8A8A8"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPetInfoModifyName"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:text="이름"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etPetInfoModifyName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/border1dp_radius_box"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="이름을 입력하세요."
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPetInfoModifyAge"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:text="나이"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etPetInfoModifyAge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/border1dp_radius_box"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="나이를 입력하세요."
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPetInfoModifyBreed"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:text="견종"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etPetInfoModifyBreed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/border1dp_radius_box"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="견종을 입력하세요."
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPetInfoModifyWeight"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:text="무게"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etPetInfoModifyWeight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/border1dp_radius_box"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="무게를 입력하세요."
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPetInfoModifyGender"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:text="성별"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/raPetInfoModifyGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/raPetInfoModifyFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="#731AED"
+                    android:checked="true"
+                    android:gravity="center_vertical"
+                    android:text="암컷"
+                    android:textColor="#979797"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/raPetInfoModifyMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="#731AED"
+                    android:gravity="center_vertical"
+                    android:text="수컷"
+                    android:textColor="#979797"
+                    android:textSize="15sp" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPetInfoModifyNeutering"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:text="중성화 여부"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/chBoxPetInfoModifyNuetering"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:buttonTint="#731AED"
+                android:gravity="center_vertical"
+                android:text="수술했을 경우 눌러주세요"
+                android:textColor="#979797"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnPetInfoModifySave"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@drawable/button_background2"
+                android:text="수정"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <!--float left,right 시키려고 넣은 의미없는 view임-->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnPetInfoModifyCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@drawable/button_background2"
+                android:text="취소"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

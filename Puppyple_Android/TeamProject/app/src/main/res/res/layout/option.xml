@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:orientation="horizontal"
+    android:gravity="bottom"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:background="@drawable/option_background">
+
+    <ImageView
+        android:id="@+id/loginImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="Navigation header"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/loginID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android Studio"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    <TextView
+        android:id="@+id/loginStr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="android.studio@android.com"/>
+
+
+
+</LinearLayout>
+
+
+

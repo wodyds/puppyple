@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Study_Android/11_19_TeamProject/TeamProject/app/src/main/res/layout/activity_navi.xml" value="0.1" />
+        <entry key="..\:/Study_Android/11_19_TeamProject/TeamProject/app/src/main/res/layout/kakao_add_info.xml" value="0.1" />
+        <entry key="..\:/Study_Android/11_19_TeamProject_modified/TeamProject/app/src/main/res/layout/activity_board_detail.xml" value="0.25" />
+        <entry key="..\:/Study_Android/11_19_TeamProject_modified/TeamProject/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Study_Android/11_19_TeamProject_modified/TeamProject/app/src/main/res/layout/board_comment.xml" value="0.33" />
+        <entry key="..\:/Study_Android/11_19_TeamProject_modified/TeamProject/app/src/main/res/layout/option_mypage.xml" value="0.1" />
+        <entry key="..\:/Study_Android/20211116 TeamProject_modified_Need to add register board from YM_JP/TeamProject/TeamProject/app/src/main/res/layout/activity_community_register.xml" value="0.1" />
+        <entry key="..\:/Study_Android/20211116 TeamProject_modified_Need to add register board from YM_JP/TeamProject/TeamProject/app/src/main/res/layout/community_fragment1.xml" value="0.1" />
+        <entry key="..\:/Study_Android/20211116 TeamProject_modified_Need to add register board from YM_JP/TeamProject/TeamProject/app/src/main/res/layout/community_fragment3.xml" value="0.1" />
+        <entry key="..\:/Study_Android/20211126 TeamProject_v4.7_Android_HomePetIvSetting_JP/TeamProject/app/src/main/res/layout/activity_board_detail.xml" value="0.25" />
+        <entry key="..\:/Study_Android/20211127 TeamProject_Modified/TeamProject/app/src/main/res/layout/community_fragment1.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211127 TeamProject_Modified/TeamProject/app/src/main/res/layout/community_fragment2.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211127 TeamProject_Modified/TeamProject/app/src/main/res/layout/community_fragment3.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211127 TeamProject_Modified/TeamProject/app/src/main/res/layout/community_fragment4.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211127 TeamProject_Modified/TeamProject/app/src/main/res/layout/community_fragment5.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211127 TeamProject_v4.9_Android_Combination_YM_JP/TeamProject/app/src/main/res/layout/activity_board_detail.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211127 TeamProject_v4.9_Android_Combination_YM_JP/TeamProject/app/src/main/res/layout/activity_community_register.xml" value="0.19479166666666667" />
+        <entry key="..\:/Study_Android/20211127 TeamProject_v4.9_Android_Combination_YM_JP/TeamProject/app/src/main/res/layout/activity_home.xml" value="0.19479166666666667" />
+        <entry key="..\:/Study_Android/20211127 TeamProject_v4.9_Android_Combination_YM_JP/TeamProject/app/src/main/res/layout/activity_join_member.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211127 TeamProject_v4.9_Android_Combination_YM_JP/TeamProject/app/src/main/res/layout/activity_login.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211127 TeamProject_v4.9_Android_Combination_YM_JP/TeamProject/app/src/main/res/layout/board_comment.xml" value="0.5" />
+        <entry key="..\:/Study_Android/20211127 TeamProject_v4.9_Android_Combination_YM_JP/TeamProject/app/src/main/res/layout/community_fragment1.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211127 TeamProject_v4.9_Android_Combination_YM_JP/TeamProject/app/src/main/res/layout/community_fragment5.xml" value="0.19479166666666667" />
+        <entry key="..\:/Study_Android/20211127 TeamProject_v4.9_Android_Combination_YM_JP/TeamProject/app/src/main/res/layout/list_header.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211127 TeamProject_v4.9_Android_Combination_YM_JP/TeamProject/app/src/main/res/layout/notice_detail.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211127 TeamProject_v4.9_Android_Combination_YM_JP/TeamProject/app/src/main/res/layout/notice_register.xml" value="0.19479166666666667" />
+        <entry key="..\:/Study_Android/20211127 TeamProject_v4.9_Android_Combination_YM_JP/TeamProject/app/src/main/res/layout/option_member_modify.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211127 TeamProject_v4.9_Android_Combination_YM_JP/TeamProject/app/src/main/res/layout/option_notice_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211127 TeamProject_v4.9_Android_Combination_YM_JP/TeamProject/app/src/main/res/layout/option_notice_view.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211129 TeamProject_modified/TeamProject/app/src/main/res/drawable/box_border.xml" value="0.38229166666666664" />
+        <entry key="..\:/Study_Android/20211129 TeamProject_modified/TeamProject/app/src/main/res/layout/activity_community_register.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211129 TeamProject_modified/TeamProject/app/src/main/res/layout/activity_navi.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211129 TeamProject_modified/TeamProject/app/src/main/res/layout/community_fragment1.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211129 TeamProject_modified/TeamProject/app/src/main/res/layout/community_fragment2.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211129 TeamProject_modified/TeamProject/app/src/main/res/layout/community_fragment3.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211129 TeamProject_modified/TeamProject/app/src/main/res/layout/community_fragment4.xml" value="0.36633663366336633" />
+        <entry key="..\:/Study_Android/20211129 TeamProject_modified/TeamProject/app/src/main/res/layout/community_fragment5.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211129 TeamProject_modified/TeamProject/app/src/main/res/layout/community_writersearch.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211129 TeamProject_modified/TeamProject/app/src/main/res/layout/notice_register.xml" value="0.19479166666666667" />
+        <entry key="..\:/Study_Android/20211129 TeamProject_modified/TeamProject/app/src/main/res/layout/option_activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211129 TeamProject_modified/TeamProject/app/src/main/res/layout/option_event_admin.xml" value="0.19479166666666667" />
+        <entry key="..\:/Study_Android/20211129 TeamProject_modified/TeamProject/app/src/main/res/layout/option_event_main.xml" value="0.19479166666666667" />
+        <entry key="..\:/Study_Android/20211129 TeamProject_modified/TeamProject/app/src/main/res/layout/option_faq_admin.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211129 TeamProject_modified/TeamProject/app/src/main/res/layout/option_faq_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211129 TeamProject_modified/TeamProject/app/src/main/res/layout/option_mypost.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211129 TeamProject_modified/TeamProject/app/src/main/res/layout/option_notice_admin.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211129 TeamProject_modified/TeamProject/app/src/main/res/layout/option_notice_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211129 TeamProject_modified/TeamProject/app/src/main/res/layout/option_notice_view.xml" value="0.19479166666666667" />
+        <entry key="..\:/Study_Android/20211129 TeamProject_modified/TeamProject/app/src/main/res/layout/youtube_fragment1.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211130 TeamProject_modified/TeamProject/app/src/main/res/layout/activity_board_detail.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211130 TeamProject_modified/TeamProject/app/src/main/res/layout/activity_event_img.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211130 TeamProject_modified/TeamProject/app/src/main/res/layout/activity_home.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211130 TeamProject_modified/TeamProject/app/src/main/res/layout/activity_login_idfind.xml" value="0.33" />
+        <entry key="..\:/Study_Android/20211130 TeamProject_modified/TeamProject/app/src/main/res/layout/activity_login_pwfind.xml" value="0.33" />
+        <entry key="..\:/Study_Android/20211130 TeamProject_modified/TeamProject/app/src/main/res/layout/event_img_first.xml" value="0.29145936981757875" />
+        <entry key="..\:/Study_Android/20211130 TeamProject_modified/TeamProject/app/src/main/res/layout/event_img_second.xml" value="0.2167745914276904" />
+        <entry key="..\:/Study_Android/20211130 TeamProject_modified/TeamProject/app/src/main/res/layout/main_fragment1.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211130 TeamProject_modified/TeamProject/app/src/main/res/layout/main_fragment2.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211130 TeamProject_modified/TeamProject/app/src/main/res/layout/main_fragment3.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211130 TeamProject_modified/TeamProject/app/src/main/res/layout/main_fragment4.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211130 TeamProject_modified/TeamProject/app/src/main/res/layout/main_fragment5.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211130 TeamProject_modified/TeamProject/app/src/main/res/layout/option_event_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211130 TeamProject_modified/TeamProject/app/src/main/res/layout/youtube_fragment1.xml" value="0.19479166666666667" />
+        <entry key="..\:/Study_Android/20211130 TeamProject_modified/TeamProject/app/src/main/res/layout/youtube_fragment2.xml" value="0.19479166666666667" />
+        <entry key="..\:/Study_Android/20211130 TeamProject_modified/TeamProject/app/src/main/res/layout/youtube_fragment3.xml" value="0.19479166666666667" />
+        <entry key="..\:/Study_Android/20211130 TeamProject_modified/TeamProject/app/src/main/res/layout/youtube_fragment4.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211130 TeamProject_modified/TeamProject/app/src/main/res/layout/youtube_fragment5.xml" value="0.19479166666666667" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/drawable-v24/border_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/drawable-v24/box_border.xml" value="0.22447916666666667" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/drawable-v24/drawable_resize.xml" value="0.22447916666666667" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/drawable/asdf.xml" value="0.275" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/drawable/box_border.xml" value="0.2598958333333333" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/drawable/button_background.xml" value="0.36302083333333335" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/drawable/button_iot_background.xml" value="0.36302083333333335" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/drawable/button_iot_img_cam.xml" value="0.38229166666666664" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/drawable/button_iot_img_feed.xml" value="0.38229166666666664" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/drawable/button_login_kakao_background.xml" value="0.2598958333333333" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/drawable/custom_indicator.xml" value="0.3072916666666667" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/drawable/menu_bottom_background.xml" value="0.27395833333333336" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/drawable/menu_bottom_select_background.xml" value="0.27395833333333336" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/drawable/nav_background.xml" value="0.27395833333333336" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/drawable/navibar_bg.xml" value="0.27395833333333336" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/drawable/shadow.xml" value="0.35555555555555557" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/drawable/toolbar_bg.xml" value="0.36302083333333335" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/activity_board_detail.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/activity_community_register.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/activity_event_img.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/activity_home2.xml" value="0.33" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/activity_join_member.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/activity_loading.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/activity_login.xml" value="0.12103746397694524" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/activity_navi.xml" value="0.33" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/board_comment.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/board_detail_picture.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/board_listview_templete.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/button_event.xml" value="0.25885416666666666" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/community_fragment1.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/community_fragment2.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/community_fragment3.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/community_fragment4.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/community_fragment5.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/community_main.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/community_writersearch.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/dialog_iot_cam.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/dialog_iot_feed.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/dialog_join.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/dialog_join_check.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/dialog_login_demand.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/dialog_map.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/dialog_member_quit.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/event_img_first.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/event_img_second.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/join_agree_location.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/join_agree_personal.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/join_agree_service.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/kakao_add_info.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/list_header.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/location_activity_main.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/location_map.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/option_activity_main.xml" value="0.27708333333333335" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/option_agree_location.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/option_faq_admin.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/option_faq_main.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/option_member_modify.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/option_member_quit.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/option_mypage.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/option_mypost.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/option_notice_admin.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/option_notice_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/option_notice_view.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/option_pet_info_add.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/pet_listview.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/pet_listview_info_modify.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/pet_listview_popup.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/pet_listview_templete.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/pw_chk.xml" value="0.27291666666666664" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/youtube_activity_main.xml" value="0.25" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/youtube_fragment1.xml" value="0.27291666666666664" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/youtube_fragment2.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/youtube_fragment3.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/youtube_fragment4.xml" value="0.1175925925925926" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/layout/youtube_fragment5.xml" value="0.27291666666666664" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/menu/main_menu.xml" value="0.27291666666666664" />
+        <entry key="..\:/Study_Android/20211203 TeamProject_modified/TeamProject/app/src/main/res/menu/menu_bottom.xml" value="0.27291666666666664" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.38229166666666664" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/drawable/border_layout.xml" value="0.18611111111111112" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/drawable/box_border.xml" value="0.38229166666666664" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/drawable/custom_indicator.xml" value="0.38229166666666664" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.18611111111111112" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/drawable/radius_border_layout.xml" value="0.38229166666666664" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/layout/activity_board_detail.xml" value="0.1" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/layout/activity_event_img.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/layout/activity_navi.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/layout/board_comment.xml" value="0.5" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/layout/board_listview_templete.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/layout/community_fragment1.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/layout/event_fragment_1.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/layout/event_fragment_2.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/layout/event_img_first.xml" value="0.1" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/layout/frame_1.xml" value="0.25" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/layout/frame_2.xml" value="0.1" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/layout/join_agree_location.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/layout/main_listview_templete.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/layout/notice_detail.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/layout/notice_register.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/layout/option_event_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/layout/option_inquiry.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/layout/option_inquiry_templete.xml" value="0.15868263473053892" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/layout/option_mypost.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/layout/option_notice_view.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/layout/page.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211211 TeamProject_modified/TeamProject/app/src/main/res/layout/pet_listview.xml" value="0.18854166666666666" />
+        <entry key="..\:/Study_Android/20211214 TeamProject_modified/TeamProject/app/src/main/res/drawable/button_background2.xml" value="0.36018518518518516" />
+        <entry key="..\:/Study_Android/20211215 TeamProject/TeamProject/app/src/main/res/drawable-v24/button_iot_background.xml" value="0.36018518518518516" />
+        <entry key="..\:/Study_Android/20211215 TeamProject/TeamProject/app/src/main/res/drawable/box_border.xml" value="0.29739583333333336" />
+        <entry key="..\:/Study_Android/20211215 TeamProject/TeamProject/app/src/main/res/drawable/shadow.xml" value="0.29739583333333336" />
+        <entry key="..\:/Study_Android/20211215 TeamProject/TeamProject/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/Study_Android/20211215 TeamProject/TeamProject/app/src/main/res/layout/activity_join_member.xml" value="0.33" />
+        <entry key="..\:/Study_Android/20211215 TeamProject/TeamProject/app/src/main/res/layout/activity_login.xml" value="0.36" />
+        <entry key="..\:/Study_Android/20211215 TeamProject/TeamProject/app/src/main/res/layout/activity_login_idfind.xml" value="0.22" />
+        <entry key="..\:/Study_Android/20211215 TeamProject/TeamProject/app/src/main/res/layout/activity_login_pwfind.xml" value="0.22" />
+        <entry key="..\:/Study_Android/20211215 TeamProject/TeamProject/app/src/main/res/layout/dialog_join.xml" value="0.365625" />
+        <entry key="..\:/Study_Android/20211215 TeamProject/TeamProject/app/src/main/res/layout/join_agree_location.xml" value="0.28703703703703703" />
+        <entry key="..\:/Study_Android/20211215 TeamProject/TeamProject/app/src/main/res/layout/option_activity_main.xml" value="0.26342710997442453" />
+        <entry key="..\:/Study_Android/20211215 TeamProject/TeamProject/app/src/main/res/layout/option_agree_location.xml" value="0.28703703703703703" />
+        <entry key="..\:/Study_Android/20211215 TeamProject/TeamProject/app/src/main/res/layout/option_member_modify.xml" value="0.33" />
+        <entry key="..\:/Study_Android/20211215 TeamProject/TeamProject/app/src/main/res/layout/option_member_modify2.xml" value="0.3703125" />
+        <entry key="..\:/Study_Android/20211215 TeamProject/TeamProject/app/src/main/res/layout/option_member_quit.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211215 TeamProject/TeamProject/app/src/main/res/layout/option_mypage.xml" value="0.28703703703703703" />
+        <entry key="..\:/Study_Android/20211215 TeamProject/TeamProject/app/src/main/res/layout/option_mypost.xml" value="0.28703703703703703" />
+        <entry key="..\:/Study_Android/20211215 TeamProject/TeamProject/app/src/main/res/layout/pet_listview.xml" value="0.25" />
+        <entry key="..\:/Study_Android/20211215 TeamProject/TeamProject/app/src/main/res/layout/pet_listview_templete.xml" value="0.33" />
+        <entry key="..\:/Study_Android/20211216 TeamProject SY/TeamProject/app/src/main/res/layout/activity_community_register.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211216 TeamProject SY/TeamProject/app/src/main/res/layout/option_agree_location.xml" value="0.67" />
+        <entry key="..\:/Study_Android/20211216 TeamProject SY/TeamProject/app/src/main/res/layout/option_agree_personal.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211216 TeamProject SY/TeamProject/app/src/main/res/layout/option_agree_service.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/drawable/border1dp_radius_box.xml" value="0.1398148148148148" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/drawable/border_bottom.xml" value="0.2574074074074074" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/drawable/border_layout.xml" value="0.2574074074074074" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/drawable/border_radius10dp_box.xml" value="0.14074074074074075" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/drawable/border_radius20dp_box.xml" value="0.378125" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/drawable/border_radius_box.xml" value="0.17407407407407408" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/drawable/border_top_bottom.xml" value="0.29270833333333335" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/drawable/box_border.xml" value="0.2574074074074074" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/drawable/button_background.xml" value="0.378125" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/drawable/button_background2.xml" value="0.378125" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/drawable/button_background3.xml" value="0.378125" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/drawable/button_iot_background.xml" value="0.378125" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/drawable/button_iot_img_cam.xml" value="0.378125" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/drawable/button_login_kakao_background.xml" value="0.378125" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/drawable/button_login_kakao_icon.xml" value="0.378125" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/drawable/button_login_naver_background.xml" value="0.378125" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/drawable/image_round.xml" value="0.2574074074074074" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/drawable/radius_border_layout.xml" value="0.29375" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/drawable/time_resize.xml" value="0.2911458333333333" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/activity_board_detail.xml" value="0.22" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/activity_community_modify.xml" value="0.33" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/activity_community_register.xml" value="0.33" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/activity_event_img.xml" value="0.21510416666666668" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/activity_home.xml" value="0.1744186046511628" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/activity_join_member.xml" value="0.16" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/activity_loading.xml" value="0.25" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/activity_login.xml" value="0.3157894736842105" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/activity_login_idfind.xml" value="0.25" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/activity_login_pwfind.xml" value="0.25" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/activity_navi.xml" value="0.25416666666666665" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/activity_webview_iot_cam.xml" value="0.21510416666666668" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/board_comment.xml" value="0.2713541666666667" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/board_detail_picture.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/board_listview_templete.xml" value="0.21510416666666668" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/community_fragment1.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/community_fragment2.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/community_fragment3.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/community_fragment4.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/community_fragment5.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/community_main.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/community_writersearch.xml" value="0.21510416666666668" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/dialog_iot_cam.xml" value="0.33" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/dialog_iot_feed.xml" value="0.27760416666666665" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/dialog_join.xml" value="0.27760416666666665" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/dialog_join_check.xml" value="0.27760416666666665" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/dialog_login_demand.xml" value="0.27760416666666665" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/dialog_map.xml" value="0.27760416666666665" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/dialog_member_quit.xml" value="0.27760416666666665" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/event_img_first.xml" value="0.3171355498721228" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/faq_detail.xml" value="0.2786458333333333" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/frame_1.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/frame_2.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/join_agree_location.xml" value="0.25" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/join_agree_personal.xml" value="0.25" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/join_agree_service.xml" value="0.33" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/kakao_add_info.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/list_header.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/location_activity_main.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/location_map.xml" value="0.25" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/main_listview_templete.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/notice_detail.xml" value="0.25" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/notice_detail2.xml" value="0.16666666666666666" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/notice_register.xml" value="0.25" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/option_activity_main.xml" value="0.25" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/option_agree_location.xml" value="0.22" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/option_agree_personal.xml" value="0.24872838250254323" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/option_agree_service.xml" value="0.18" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/option_alert.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/option_event_admin.xml" value="0.2515625" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/option_event_main.xml" value="0.2515625" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/option_faq_admin.xml" value="0.22" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/option_faq_main.xml" value="0.22" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/option_inquiry.xml" value="0.25" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/option_inquiry_templete.xml" value="0.25" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/option_member_modify.xml" value="0.33" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/option_member_quit.xml" value="0.22" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/option_mypage.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/option_mypost.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/option_notice_admin.xml" value="0.33" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/option_notice_main.xml" value="0.25" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/option_notice_view.xml" value="0.22" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/option_pet_info_add.xml" value="0.22" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/page.xml" value="0.2546875" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/pet_listview.xml" value="0.2" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/pet_listview_info_modify.xml" value="0.22" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/pet_listview_popup.xml" value="0.25" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/pet_listview_templete.xml" value="0.27314814814814814" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/pw_chk.xml" value="0.33" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/youtube_activity_main.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/youtube_daily1.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/youtube_fragment1.xml" value="0.27760416666666665" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/youtube_fragment2.xml" value="0.27760416666666665" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/youtube_fragment3.xml" value="0.27760416666666665" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/youtube_fragment4.xml" value="0.27760416666666665" />
+        <entry key="..\:/Study_Android/20211216 TeamProject/TeamProject/app/src/main/res/layout/youtube_fragment5.xml" value="0.27760416666666665" />
+        <entry key="..\:/Study_Android/20211216 TeamProject_modified_/TeamProject/app/src/main/res/layout/activity_main.xml" value="0.1890625" />
+        <entry key="..\:/Study_Android/20211216 TeamProject_modified_YM/20211216 TeamProject_modified_YM/TeamProject/app/src/main/res/layout/activity_home.xml" value="0.2713541666666667" />
+        <entry key="..\:/Study_Android/20211216 TeamProject_modified_YM/20211216 TeamProject_modified_YM/TeamProject/app/src/main/res/layout/activity_webview_iot_cam.xml" value="0.1" />
+        <entry key="..\:/Study_Android/20211216 TeamProject_modified_YM/20211216 TeamProject_modified_YM/TeamProject/app/src/main/res/layout/option_faq_main.xml" value="0.2713541666666667" />
+        <entry key="..\:/Study_Android/20211220 TeamProject/TeamProject/app/src/main/res/drawable/border1dp_radius_box.xml" value="0.17222222222222222" />
+        <entry key="..\:/Study_Android/20211220 TeamProject/TeamProject/app/src/main/res/layout/activity_board_detail.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211220 TeamProject/TeamProject/app/src/main/res/layout/activity_community_modify.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211220 TeamProject/TeamProject/app/src/main/res/layout/activity_community_register.xml" value="0.3398148148148148" />
+        <entry key="..\:/Study_Android/20211220 TeamProject/TeamProject/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/Study_Android/20211220 TeamProject/TeamProject/app/src/main/res/layout/list_header.xml" value="0.365625" />
+        <entry key="..\:/Study_Android/20211220 TeamProject/TeamProject/app/src/main/res/layout/listview_item.xml" value="0.1" />
+        <entry key="..\:/Study_Android/20211220 TeamProject/TeamProject/app/src/main/res/layout/main_listview_templete.xml" value="0.25" />
+        <entry key="..\:/Study_Android/20211220 TeamProject/TeamProject/app/src/main/res/layout/option_notice_main.xml" value="0.365625" />
+        <entry key="..\:/Study_Android/20211220 TeamProject/TeamProject/app/src/main/res/layout/spinner_item.xml" value="0.1" />
+        <entry key="..\:/Study_Android/20211220 TeamProject/TeamProject/app/src/main/res/layout/youtube_daily1.xml" value="0.5" />
+        <entry key="..\:/Study_Android/20211220 TeamProject/TeamProject/app/src/main/res/layout/youtube_fragment1.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211220 TeamProject_v7.7_Android_Combination_YM/TeamProject/app/src/main/res/drawable/border1dp_radius_box.xml" value="0.21944444444444444" />
+        <entry key="..\:/Study_Android/20211220 TeamProject_v7.7_Android_Combination_YM/TeamProject/app/src/main/res/drawable/spinner_custom.xml" value="0.2814814814814815" />
+        <entry key="..\:/Study_Android/20211220 TeamProject_v7.7_Android_Combination_YM/TeamProject/app/src/main/res/drawable/spinner_popup_custom.xml" value="0.1" />
+        <entry key="..\:/Study_Android/20211220 TeamProject_v7.7_Android_Combination_YM/TeamProject/app/src/main/res/layout/activity_community_register.xml" value="0.34375" />
+        <entry key="..\:/Study_Android/20211220 TeamProject_v7.7_Android_Combination_YM/TeamProject/app/src/main/res/layout/activity_event_img.xml" value="0.3614583333333333" />
+        <entry key="..\:/Study_Android/20211220 TeamProject_v7.7_Android_Combination_YM/TeamProject/app/src/main/res/layout/community_fragment1.xml" value="0.34375" />
+        <entry key="..\:/Study_Android/20211220 TeamProject_v7.7_Android_Combination_YM/TeamProject/app/src/main/res/layout/community_fragment2.xml" value="0.34375" />
+        <entry key="..\:/Study_Android/20211220 TeamProject_v7.7_Android_Combination_YM/TeamProject/app/src/main/res/layout/community_fragment4.xml" value="0.34375" />
+        <entry key="..\:/Study_Android/20211220 TeamProject_v7.7_Android_Combination_YM/TeamProject/app/src/main/res/layout/community_fragment5.xml" value="0.34375" />
+        <entry key="..\:/Study_Android/20211220 TeamProject_v7.7_Android_Combination_YM/TeamProject/app/src/main/res/layout/option_activity_main.xml" value="0.34375" />
+        <entry key="..\:/Study_Android/20211220 TeamProject_v7.7_Android_Combination_YM/TeamProject/app/src/main/res/layout/pet_listview.xml" value="0.3614583333333333" />
+        <entry key="..\:/Study_Android/20211220 TeamProject_v7.7_Android_Combination_YM/TeamProject/app/src/main/res/layout/pet_listview_templete.xml" value="0.3614583333333333" />
+        <entry key="..\:/Study_Android/20211220 TeamProject_v7.7_Android_Combination_YM/TeamProject/app/src/main/res/layout/spinner_item.xml" value="0.34375" />
+        <entry key="..\:/Study_Android/20211221 TeamProject Final/TeamProject/app/src/main/res/layout/activity_community_modify.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211221 TeamProject Final/TeamProject/app/src/main/res/layout/activity_webview_iot_cam.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/20211221 TeamProject Final/TeamProject/app/src/main/res/layout/option_mypost.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211221 TeamProject_v8.0_Android_Modification_JP/TeamProject/app/src/main/res/layout/activity_join_member.xml" value="0.34375" />
+        <entry key="..\:/Study_Android/20211221 TeamProject_v8.0_Android_Modification_JP/TeamProject/app/src/main/res/layout/dialog_member_quit.xml" value="0.34375" />
+        <entry key="..\:/Study_Android/20211221 TeamProject_v8.0_Android_Modification_JP/TeamProject/app/src/main/res/layout/option_activity_main.xml" value="0.34375" />
+        <entry key="..\:/Study_Android/20211221 TeamProject_v8.0_Android_Modification_JP/TeamProject/app/src/main/res/layout/option_agree_service.xml" value="0.2846054333764554" />
+        <entry key="..\:/Study_Android/20211221 TeamProject_v8.0_Android_Modification_JP/TeamProject/app/src/main/res/layout/option_member_quit.xml" value="0.34375" />
+        <entry key="..\:/Study_Android/20211221 TeamProject_v8.0_Android_Modification_JP/TeamProject/app/src/main/res/layout/option_pet_info_add.xml" value="0.34375" />
+        <entry key="..\:/Study_Android/20211222 TeamProject Final/TeamProject/app/src/main/res/layout/activity_home.xml" value="0.22407407407407406" />
+        <entry key="..\:/Study_Android/20211222 TeamProject Final/TeamProject/app/src/main/res/layout/activity_join_member.xml" value="0.1828125" />
+        <entry key="..\:/Study_Android/20211222 TeamProject Final/TeamProject/app/src/main/res/layout/activity_navi.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211222 TeamProject Final/TeamProject/app/src/main/res/layout/board_listview_templete.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211222 TeamProject Final/TeamProject/app/src/main/res/layout/main_listview_templete.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211222 TeamProject Final/TeamProject/app/src/main/res/layout/option_activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/20211222 TeamProject Final/TeamProject/app/src/main/res/layout/page.xml" value="0.22407407407407406" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/drawable/button_background.xml" value="0.38229166666666664" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/drawable/button_background1.xml" value="0.16944444444444445" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/drawable/button_iot_img_cam.xml" value="0.24814814814814815" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/drawable/button_login_kakao_background.xml" value="0.38229166666666664" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/drawable/button_login_kakao_icon.xml" value="0.38229166666666664" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/drawable/button_login_naver_background.xml" value="0.20885416666666667" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/drawable/button_login_naver_icon.xml" value="0.20885416666666667" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/drawable/image_round.xml" value="0.38229166666666664" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/drawable/loading_background.xml" value="0.25555555555555554" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/drawable/menu_bottom_background.xml" value="0.18611111111111112" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/drawable/menu_bottom_select_background.xml" value="0.18611111111111112" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/drawable/nav_background.xml" value="0.18611111111111112" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/font/himelody.xml" value="0.16111111111111112" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/activity_community_register.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/activity_join_member.xml" value="0.33" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/activity_join_pet.xml" value="0.33" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/activity_loading.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/activity_login.xml" value="0.32303370786516855" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/activity_login1.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/activity_login_idfind.xml" value="0.33" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/activity_login_pwfind.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/activity_main.xml" value="0.23703703703703705" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/activity_navi.xml" value="0.4218533886583679" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/activity_sub_chk_my_post.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/activity_sub_member_modify.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/activity_sub_petinfo.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/community_activity_main.xml" value="0.33" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/community_fragment1.xml" value="0.33" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/community_fragment2.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/community_fragment3.xml" value="0.33" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/community_fragment4.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/community_fragment5.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/community_main.xml" value="0.25" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/custom.xml" value="0.1" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/dddddd.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/dialog_iot_cam.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/dialog_iot_camera.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/dialog_iot_feed.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/dialog_iot_meal.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/dialog_join.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/dialog_join_check.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/dialog_login.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/dialog_login_demand.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/dialog_map.xml" value="0.2965779467680608" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/dialog_member_quit.xml" value="0.33" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/fragment1.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/fragment2.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/fragment3.xml" value="0.1" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/fragment4.xml" value="0.33" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/fragment5.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/join_agree_location.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/join_agree_personal.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/join_agree_service.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/kakao_add_info.xml" value="0.34479166666666666" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/location_activity_main.xml" value="0.1" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/location_map.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/main_fragment1.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/main_fragment2.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/main_fragment3.xml" value="0.20625" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/main_fragment4.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/main_fragment5.xml" value="0.21927083333333333" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/nav_header_main.xml" value="0.1" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/naverlogin.xml" value="0.22" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/option.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/option_access1.xml" value="0.1" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/option_access2.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/option_access3.xml" value="0.1" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/option_activity_main.xml" value="0.33" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/option_agree_location.xml" value="0.1852437417654809" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/option_agree_personal.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/option_agree_service.xml" value="0.32652113330236876" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/option_alert.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/option_chk_my_post.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/option_event_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/option_event_view.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/option_faq_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/option_faq_view.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/option_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/option_member_modify.xml" value="0.33" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/option_member_quit.xml" value="0.33" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/option_mypage.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/option_mypost.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/option_notice_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/option_notice_view.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/option_pet_info.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/option_pet_info_add.xml" value="0.25" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/pet_listview.xml" value="0.34479166666666666" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/pet_listview_info_modify.xml" value="0.33" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/pet_listview_popup.xml" value="0.2639593908629442" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/pet_listview_templete.xml" value="0.30092592592592593" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/pw_chk.xml" value="0.34615384615384615" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/youtube_activity_main.xml" value="0.15" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/youtube_fragment1.xml" value="0.33" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/youtube_fragment2.xml" value="0.1" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/youtube_fragment3.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/youtube_fragment4.xml" value="0.16607773851590105" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/youtube_fragment5.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/layout/youtuber_main.xml" value="0.19791666666666666" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/menu/main_menu.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/menu/menu_bottom.xml" value="0.1" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/menu/menu_top.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject/app/src/main/res/menu/navi_icon.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/drawable/box_border.xml" value="0.38229166666666664" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/drawable/close.xml" value="0.1935185185185185" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/drawable/image_round.xml" value="0.38229166666666664" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/drawable/loading_background.xml" value="0.38229166666666664" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/drawable/menu_bottom_background.xml" value="0.378125" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/activity_home.xml" value="0.3074074074074074" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/activity_join_member.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/activity_join_pet.xml" value="0.3380208333333333" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/activity_loading.xml" value="0.1" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/activity_login.xml" value="0.3380208333333333" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/activity_mypage.xml" value="0.18" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/activity_navi.xml" value="0.33" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/community_activity_main.xml" value="0.3074074074074074" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/community_fragment1.xml" value="0.3074074074074074" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/community_fragment2.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/community_fragment5.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/dskfjkl.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/faq_main.xml" value="0.33" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/faq_view.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/imform_main.xml" value="0.3380208333333333" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/imform_view.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/location_activity_main.xml" value="0.3380208333333333" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/main_fragment2.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/nav_header_main.xml" value="0.3380208333333333" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/notice_main.xml" value="0.3380208333333333" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/notice_view.xml" value="0.32083333333333336" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/option_access1.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/option_access2.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/option_access3.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/option_activity_main.xml" value="0.25" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/option_alert.xml" value="0.3074074074074074" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/youtube_activity_main.xml" value="0.3380208333333333" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/youtuber_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/youtuber_view.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/menu/menu_bottom.xml" value="0.1" />
+        <entry key="..\:/Study_Android/TeamProject/app/src/main/res/drawable/ic_dehaze_black_24dp.xml" value="0.22083333333333333" />
+        <entry key="..\:/Study_Android/TeamProject/app/src/main/res/layout/activity_main.xml" value="0.13164556962025317" />
+        <entry key="..\:/Study_Android/TeamProject/app/src/main/res/layout/bottomnavi.xml" value="0.33" />
+        <entry key="..\:/Study_Android/TeamProject/app/src/main/res/layout/fragment1.xml" value="0.11080332409972299" />
+        <entry key="..\:/Study_Android/TeamProject/app/src/main/res/layout/fragment2.xml" value="0.11363636363636363" />
+        <entry key="..\:/Study_Android/TeamProject/app/src/main/res/layout/fragment3.xml" value="0.11019283746556474" />
+        <entry key="..\:/Study_Android/TeamProject/app/src/main/res/layout/fragment4.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/app/src/main/res/layout/fragment5.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/app/src/main/res/menu/main_menu.xml" value="0.33" />
+        <entry key="..\:/Study_Android/TeamProject/app/src/main/res/menu/menu_bottom.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject/app/src/main/res/menu/menu_top.xml" value="0.33" />
+        <entry key="..\:/Study_Android/TeamProject2/TeamProject/TeamProject/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.20092592592592592" />
+        <entry key="..\:/Study_Android/TeamProject2/TeamProject/TeamProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.20092592592592592" />
+        <entry key="..\:/Study_Android/TeamProject2/TeamProject/TeamProject/app/src/main/res/drawable/loading_background.xml" value="0.3717948717948718" />
+        <entry key="..\:/Study_Android/TeamProject2/TeamProject/TeamProject/app/src/main/res/drawable/menu_bottom_select_background.xml" value="0.38229166666666664" />
+        <entry key="..\:/Study_Android/TeamProject2/TeamProject/TeamProject/app/src/main/res/drawable/nav_background.xml" value="0.38229166666666664" />
+        <entry key="..\:/Study_Android/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/activity_home.xml" value="0.3614583333333333" />
+        <entry key="..\:/Study_Android/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/activity_join_member.xml" value="0.3614583333333333" />
+        <entry key="..\:/Study_Android/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/activity_join_pet.xml" value="0.3614583333333333" />
+        <entry key="..\:/Study_Android/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/activity_loading.xml" value="0.25" />
+        <entry key="..\:/Study_Android/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/activity_login.xml" value="0.3614583333333333" />
+        <entry key="..\:/Study_Android/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Study_Android/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/activity_main2.xml" value="0.3489583333333333" />
+        <entry key="..\:/Study_Android/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/activity_navi.xml" value="0.31179775280898875" />
+        <entry key="..\:/Study_Android/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/community_activity_main.xml" value="0.1" />
+        <entry key="..\:/Study_Android/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/community_fragment1.xml" value="0.1" />
+        <entry key="..\:/Study_Android/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/imform_main.xml" value="0.3392405063291139" />
+        <entry key="..\:/Study_Android/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/location_activity_main.xml" value="0.3435897435897436" />
+        <entry key="..\:/Study_Android/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/nav_header_main.xml" value="0.3614583333333333" />
+        <entry key="..\:/Study_Android/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/option_access1.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/option_access2.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/option_access3.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/youtube_activity_main.xml" value="0.3614583333333333" />
+        <entry key="..\:/Study_Android/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/youtube_fragment5.xml" value="0.3614583333333333" />
+        <entry key="..\:/Study_Android/TeamProject2/TeamProject/TeamProject/app/src/main/res/menu/main_menu.xml" value="0.2605042016806723" />
+        <entry key="..\:/Study_Android/TeamProject2/TeamProject/TeamProject/app/src/main/res/menu/menu_bottom.xml" value="0.1" />
+        <entry key="..\:/Study_Android/TeamProject2/TeamProject/TeamProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1638888888888889" />
+        <entry key="..\:/Study_Android/TeamProject2/TeamProject/TeamProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1638888888888889" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/TeamProject/app/src/main/res/drawable/button_background.xml" value="0.20416666666666666" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/TeamProject/app/src/main/res/drawable/button_background1.xml" value="0.38229166666666664" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/TeamProject/app/src/main/res/drawable/button_iot_background.xml" value="0.2037037037037037" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/TeamProject/app/src/main/res/drawable/image_round.xml" value="0.20416666666666666" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/TeamProject/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/TeamProject/app/src/main/res/layout/activity_join_member.xml" value="0.17592592592592593" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/TeamProject/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/TeamProject/app/src/main/res/layout/activity_login_idfind.xml" value="0.209375" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/TeamProject/app/src/main/res/layout/activity_login_pwfind.xml" value="0.19166666666666668" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/TeamProject/app/src/main/res/layout/community_main.xml" value="0.17592592592592593" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/TeamProject/app/src/main/res/layout/dialog_iot_camera.xml" value="0.19166666666666668" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/TeamProject/app/src/main/res/layout/dialog_iot_meal.xml" value="0.1" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/TeamProject/app/src/main/res/layout/option_mypost.xml" value="0.19166666666666668" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/TeamProject/app/src/main/res/layout/option_notice_main.xml" value="0.17592592592592593" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/TeamProject/app/src/main/res/layout/option_notice_view.xml" value="0.17592592592592593" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/TeamProject/app/src/main/res/layout/option_pet_info.xml" value="0.17592592592592593" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/TeamProject/app/src/main/res/layout/pw_chk.xml" value="0.17592592592592593" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/TeamProject/app/src/main/res/layout/youtube_activity_main.xml" value="0.17592592592592593" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/TeamProject/app/src/main/res/layout/youtube_fragment1.xml" value="0.17592592592592593" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/TeamProject/app/src/main/res/layout/youtube_fragment4.xml" value="0.17592592592592593" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/TeamProject/app/src/main/res/menu/main_menu.xml" value="0.17592592592592593" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/TeamProject/app/src/main/res/menu/menu_bottom.xml" value="0.13518518518518519" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/drawable/button_background.xml" value="0.38229166666666664" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/drawable/image_round.xml" value="0.38229166666666664" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/drawable/loading_background.xml" value="0.10185185185185185" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/drawable/menu_bottom_background.xml" value="0.10185185185185185" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/drawable/menu_bottom_select_background.xml" value="0.38229166666666664" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/drawable/nav_background.xml" value="0.2101851851851852" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/activity_community_register.xml" value="0.3619791666666667" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/activity_join_member.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/activity_join_pet.xml" value="0.5" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/activity_loading.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/activity_login.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/activity_login_pwfind.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/activity_navi.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/activity_second.xml" value="0.3564102564102564" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/community_activity_main.xml" value="0.1" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/community_fragment1.xml" value="0.1" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/community_fragment2.xml" value="0.1" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/community_fragment4.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/community_fragment5.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/community_main.xml" value="0.1" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/ddddd.xml" value="0.31296296296296294" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/dialog_iot_cam.xml" value="0.3619791666666667" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/dialog_iot_camera.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/dialog_iot_feed.xml" value="0.3619791666666667" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/dialog_iot_meal.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/dialog_join.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/dialog_join_check.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/dialog_login.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/dialog_map.xml" value="0.3619791666666667" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/dialog_member_quit.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/join_agree_location.xml" value="0.25" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/join_agree_personal.xml" value="0.20234741784037558" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/join_agree_service.xml" value="0.2389530931339225" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/kakaologin.xml" value="0.3564102564102564" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/list_header.xml" value="0.33" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/location_activity_main.xml" value="0.1" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/location_map.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/main_fragment1.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/main_fragment2.xml" value="0.3619791666666667" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/main_fragment3.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/main_fragment4.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/main_fragment5.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/nav_header_main.xml" value="0.1" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/naverlogin.xml" value="0.20885416666666667" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/option_activity_main.xml" value="0.33" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/option_agree_location.xml" value="0.1852437417654809" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/option_agree_personal.xml" value="0.25406577520780627" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/option_agree_service.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/option_alert.xml" value="0.33" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/option_event_main.xml" value="0.2430379746835443" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/option_event_view.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/option_faq_main.xml" value="0.33" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/option_faq_view.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/option_member_modify.xml" value="0.33" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/option_member_quit.xml" value="0.33" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/option_mypage.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/option_mypost.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/option_notice_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/option_notice_view.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/option_pet_info.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/pw_chk.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/youtube_activity_main.xml" value="0.1" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/youtube_fragment1.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/youtube_fragment2.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/youtube_fragment3.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/youtube_fragment5.xml" value="0.1" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/youtuber_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/layout/youtuber_view.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/menu/main_menu.xml" value="0.1" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/menu/menu_bottom.xml" value="0.1" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/hanul - Android/TeamProject/TeamProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
+        <entry key="..\:/hanul - Android/TeamProject/app/src/main/res/drawable/ic_dehaze_black_24dp.xml" value="0.3567708333333333" />
+        <entry key="..\:/hanul - Android/TeamProject/app/src/main/res/drawable/nav_background.xml" value="0.3567708333333333" />
+        <entry key="..\:/hanul - Android/TeamProject/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/hanul - Android/TeamProject/app/src/main/res/layout/bottomnavi.xml" value="0.33" />
+        <entry key="..\:/hanul - Android/TeamProject/app/src/main/res/layout/fragment1.xml" value="0.1813031161473088" />
+        <entry key="..\:/hanul - Android/TeamProject/app/src/main/res/layout/fragment2.xml" value="0.340625" />
+        <entry key="..\:/hanul - Android/TeamProject/app/src/main/res/layout/fragment3.xml" value="0.1" />
+        <entry key="..\:/hanul - Android/TeamProject/app/src/main/res/layout/fragment4.xml" value="0.340625" />
+        <entry key="..\:/hanul - Android/TeamProject/app/src/main/res/layout/fragment5.xml" value="0.340625" />
+        <entry key="..\:/hanul - Android/TeamProject/app/src/main/res/layout/nav_header_main.xml" value="0.340625" />
+        <entry key="..\:/hanul - Android/TeamProject/app/src/main/res/menu/main_menu.xml" value="0.340625" />
+        <entry key="..\:/hanul - Android/TeamProject/app/src/main/res/menu/menu_bottom.xml" value="0.340625" />
+        <entry key="..\:/hanul - Android/TeamProject/app/src/main/res/menu/menu_top.xml" value="0.340625" />
+        <entry key="..\:/hanul - Android/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/activity_login.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/activity_navi.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/community_activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/community_fragment1.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/community_fragment5.xml" value="0.2046875" />
+        <entry key="..\:/hanul - Android/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/imform_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/location_activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/main_fragment1.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/nav_header_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/option_access1.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/option_access2.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/option_activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProject3/TeamProject2/TeamProject/TeamProject/app/src/main/res/layout/youtube_activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.38229166666666664" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/drawable/box_border.xml" value="0.38229166666666664" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/drawable/ic_dehaze_black_24dp.xml" value="0.38229166666666664" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/drawable/loading_background.xml" value="0.38229166666666664" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/drawable/menu_bottom_background.xml" value="0.38229166666666664" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/drawable/menu_bottom_select_background.xml" value="0.38229166666666664" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/drawable/nav_background.xml" value="0.38229166666666664" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/activity_agree_location.xml" value="0.1852437417654809" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/activity_agree_personal.xml" value="0.27808544303797467" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/activity_agree_service.xml" value="0.3456243854473943" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/activity_join_agree_location.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/activity_join_agree_personal.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/activity_join_agree_service.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/activity_join_member.xml" value="0.33" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/activity_join_pet.xml" value="0.33" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/activity_loading.xml" value="0.33" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/activity_login.xml" value="0.2612359550561798" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/activity_login_pwfind.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/activity_mypage.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/activity_navi.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/activity_sub_location.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/activity_sub_personal.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/activity_sub_service.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/actovotu_agree_personal.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/community_activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/community_fragment1.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/community_fragment4.xml" value="0.1" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/community_fragment5.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/community_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/faq_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/faq_view.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/imform_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/imform_view.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/join_agree_location.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/join_agree_service.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/location_activity_main.xml" value="0.33" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/location_map.xml" value="0.25" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/main_fragment1.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/main_fragment2.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/main_fragment5.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/nav_header_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/notice_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/notice_view.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/option_access1.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/option_access2.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/option_activity_agree_service.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/option_activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/option_activity_mypage.xml" value="0.33" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/option_agree_location.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/option_agree_personal.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/option_agree_service.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/option_alert.xml" value="0.22" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/option_faq_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/option_faq_view.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/option_mypage.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/option_notice_main.xml" value="0.33" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/option_notice_view.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/youtube_activity_main.xml" value="0.1" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/youtube_fragment1.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/youtube_fragment2.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/youtube_fragment5.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/youtuber_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/layout/youtuber_view.xml" value="0.36614583333333334" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/menu/main_menu.xml" value="0.1" />
+        <entry key="..\:/hanul - Android/TeamProjectbh/TeamProject/app/src/main/res/menu/menu_bottom.xml" value="0.18" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

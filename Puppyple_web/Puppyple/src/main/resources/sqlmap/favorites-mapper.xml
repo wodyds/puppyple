@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="favorites.mapper">
+
+	<select id="favorites_count" resultType="integer">
+		select COUNT(*)
+		from favorites
+		where pid = #{pid}
+	</select>
+
+	<insert id="favorites_insert">
+		insert into favorites (pid, flag, like_member_id)
+		values (#{pid}, #{flag}, #{like_member_id})
+	</insert>
+
+
+	<delete id="favorites_delete">
+		delete from favorites
+		where pid = #{pid}
+		and like_member_id = #{like_member_id}
+	</delete>
+
+</mapper>

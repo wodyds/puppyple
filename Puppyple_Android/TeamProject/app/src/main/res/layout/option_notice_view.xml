@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 1에서 만든 DTO에서 내가 보여주고 싶은 데이터를 골라 xml파일을 만든다 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+
+
+    <LinearLayout
+        android:id="@+id/notice_parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/border1dp_radius_box"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/notice_tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="(제목)"
+            android:lineSpacingExtra="4dp"
+            android:textSize="18sp" />
+        <!--android:maxLines="1"
+        android:singleLine="true"-->
+
+        <TextView
+            android:id="@+id/notice_tvContent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:singleLine="true"
+            android:text="내용"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

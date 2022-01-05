@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="pet.mapper">
+	
+	<!-- Web 펫 업데이트 기능 -->
+	<update id="web_petUpdate">
+		update pet
+		set pet_name = #{pet_name}, pet_breed = #{pet_breed, jdbcType=VARCHAR},
+			pet_age = #{pet_age, jdbcType=VARCHAR}, pet_gender = #{pet_gender, jdbcType=VARCHAR},
+			pet_nuetering = #{pet_nuetering, jdbcType=VARCHAR},
+			pet_weight = #{pet_weight, jdbcType=VARCHAR},
+			pet_filename = #{pet_filename, jdbcType=VARCHAR},
+			pet_filepath = #{pet_filepath, jdbcType=VARCHAR}
+		where pet_id = #{pet_id}
+	</update>
+	
+	<!-- Web 펫 셀렉트  1마리 정보만 선택적-->
+	<select id="web_petSelect" resultType="pet.PetVO">
+		select *
+		from pet
+		where pet_id = #{pet_id}
+	</select>
+	
+	
+	<!-- Web 펫 삭제 기능 -->
+	<delete id="web_petDelete">
+		delete from pet
+		where pet_id = #{pet_id}
+	</delete>
+	
+	
+	<!-- 웹 Web 펫정보추가 -->
+	<!-- 반려견정보등록 -->
+	<insert id="web_petAdd">
+		insert into pet (member_id, pet_name, pet_breed, pet_age, pet_gender, pet_nuetering, pet_weight, pet_filename, pet_filepath)
+		values (#{member_id}, #{pet_name}, #{pet_breed, jdbcType=VARCHAR},
+				 #{pet_age, jdbcType=VARCHAR}, #{pet_gender, jdbcType=VARCHAR},
+				 #{pet_nuetering, jdbcType=VARCHAR},
+				 #{pet_weight, jdbcType=VARCHAR}, #{pet_filename, jdbcType=VARCHAR}, #{pet_filepath, jdbcType=VARCHAR})		
+	</insert>
+
+	<select id="pet_petList" resultType="pet.PetVO">
+		select p.*, (select member_nickname from member where member_id = p.member_id) member_nickname from pet p
+		where member_id = #{member_id}
+	</select>
+
+	<!--  반려견삭제 -->
+	<delete id="and_petDelete">
+		delete from pet
+		where pet_id = #{pet_id}
+	</delete>
+	
+	<!-- 반려견리스트확인 -->
+	<select id="and_petList" resultType="pet.PetVO">
+		select *
+		from pet
+		where member_id = #{member_id}
+		order by pet_id
+	</select>
+
+	<!-- 반려견정보등록 -->
+	<insert id="and_petAdd">
+		insert into pet (member_id, pet_name, pet_breed, pet_age, pet_gender, pet_nuetering, pet_weight, pet_filename)
+		values (#{member_id}, #{pet_name}, #{pet_breed, jdbcType=VARCHAR},
+				 #{pet_age, jdbcType=VARCHAR}, #{pet_gender, jdbcType=VARCHAR},
+				 #{pet_nuetering, jdbcType=VARCHAR},
+				 #{pet_weight, jdbcType=VARCHAR}, #{pet_filename, jdbcType=VARCHAR})		
+	</insert>
+		
+	<!-- 반려견정보수정(첨부파일x) -->
+	<update id="and_petModify_Nofile">
+		update pet
+		set pet_name = #{pet_name}, pet_breed = #{pet_breed, jdbcType=VARCHAR},
+			pet_age = #{pet_age, jdbcType=VARCHAR}, pet_gender = #{pet_gender, jdbcType=VARCHAR},
+			pet_nuetering = #{pet_nuetering, jdbcType=VARCHAR},
+			pet_weight = #{pet_weight, jdbcType=VARCHAR}
+		where pet_id = #{pet_id}
+	</update>
+	
+	<!-- 반려견정보수정 -->
+	<update id="and_petModify">
+		update pet
+		set pet_name = #{pet_name}, pet_breed = #{pet_breed, jdbcType=VARCHAR},
+			pet_age = #{pet_age, jdbcType=VARCHAR}, pet_gender = #{pet_gender, jdbcType=VARCHAR},
+			pet_nuetering = #{pet_nuetering, jdbcType=VARCHAR},
+			pet_weight = #{pet_weight, jdbcType=VARCHAR},
+			pet_filename = #{pet_filename, jdbcType=VARCHAR}
+		where pet_id = #{pet_id}
+	</update>
+
+</mapper>

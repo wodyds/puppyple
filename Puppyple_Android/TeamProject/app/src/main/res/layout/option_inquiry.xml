@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <FrameLayout
+            android:id="@+id/contain"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/toolbar_bg"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/option_inquiry_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="21dp"
+                android:background="@drawable/back"
+                android:backgroundTint="#555555" />
+
+            <TextView
+                android:id="@+id/tv_option_inquiry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="1:1문의"
+                android:textColor="#555555"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/inquiry_Board"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:divider="#FFFFFF"
+            android:dividerHeight="0px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <!--플로팅버튼-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/new_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/pencil"
+        app:backgroundTint="#731AED"
+        app:fabSize="auto" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
